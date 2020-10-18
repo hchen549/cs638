@@ -28,13 +28,17 @@ The data used for this analysis are collected from public online sources.<br>
 
 > Week 10/12 (Haoming)
 
-We first plot the distribution of target varibale bike users count with histogram, probability plot, and box plot.
+We first plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
 
 <img src = "images/target_variable_distribution.png" width = 500>
 
 <img src = "images/correlation_with_count.png" width = 500>
 
 <img src = "images/heatmap.png" width = 500>
+
+## Preliminary Data Modeling
+
+> Week 10/18 (Ian)
 
 
 
