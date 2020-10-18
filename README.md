@@ -42,6 +42,6 @@ We first plot the distribution of target variable bike users count with histogra
 
 Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure 4 shows a comparison between the actual bike usage data in 2019 and the predicted results using a multiple regression model.
 
-
+<img src = "images/Rough model 2019.png">
 
 Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a great model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
