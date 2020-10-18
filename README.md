@@ -17,4 +17,10 @@ The data used for this analysis are collected from public online sources.<br>
 
 ## Exploratory data analysis
 
+> Week 10/12 (Haoming)
+
+We first plot the distribution of target varibale bike users count with histogram, probability plot, and box plot.
+
+<img src = "images/target_variable_distribution.png" width = 100>
+
 
