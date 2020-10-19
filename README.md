@@ -66,7 +66,7 @@ Tested in this dataset, this model has a coefficient of determination or R^2 sco
 
 <img src = "images/tree.png" width = 800>
 
-<img src = "images/feature_im_dt.png" width = 500>
+<img src = "images/feature_im_dt2.png" width = 500>
 
 
 
