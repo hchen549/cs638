@@ -47,3 +47,11 @@ Having determined the factors that contribute to bicycle usage in Madison, a mod
 
 
 Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
+
+> Week 10/18 (Haoming)
+
+<img src = "images/Simple_lr_num.png", width = 800>
+
+<img src = "images/Simple_lr_diff.png", width = 800>
+
+
