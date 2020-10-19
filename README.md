@@ -40,7 +40,7 @@ We first plot the distribution of target variable bike users count with histogra
 
 
 
-> Week 10/18 (Haoming)
+> Week 10/19 (Haoming)
 
 plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
 
@@ -63,9 +63,13 @@ Having determined the factors that contribute to bicycle usage in Madison, a mod
 Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
 
 ### Tree based Model
-> Week 10/18 (Haoming)
+> Week 10/19 (Haoming)
 
 <img src = "images/tree.png" width = 800>
+
+
+
+Although the correlations are giving a good overview of the most important numeric variables and multicolinerity among those variables, I wanted to get an overview of the most important variables including the categorical variables.
 
 <img src = "images/feature_im_dt2.png" width = 500>
 
