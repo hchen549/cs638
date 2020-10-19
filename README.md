@@ -30,11 +30,11 @@ The data used for this analysis are collected from public online sources.<br>
 
 We first plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
 
-<img src = "images/target_variable_distribution.png" width = 500>
 
-<img src = "images/correlation_with_count.png" width = 500>
 
-<img src = "images/heatmap.png" width = 500>
+<img src = "images/correlation_with_count.png" width = 400>
+
+<img src = "images/heatmap.png" width = 400>
 
 ## Preliminary Data Modeling
 
