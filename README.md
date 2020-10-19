@@ -50,6 +50,8 @@ Tested in this dataset, this model has a coefficient of determination or R^2 sco
 
 > Week 10/18 (Haoming)
 
+plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
+
 <img src = "images/Simple_lr_num.png", width = 800>
 
 <img src = "images/Simple_lr_diff.png", width = 800>
