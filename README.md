@@ -4,7 +4,7 @@
 
 The restrictions put in place to limit the diffusion and impacts of Covid-19 have had a widespread impact on people’s lives, and the way energy is used across entire economies.
 
-One of the biggest impacts has been the reduction in passenger transport demand, due to a combination of government lockdowns and fears of contracting and spreading the virus when using mass transport modes. People embrace cycling as a response to crises. Therefore, a key question is whether changes to transport behaviours during the crisis may result in a permanent change in behaviour (and transport energy use) or if transport patterns will revert to ‘business as usual’ when the crisis ends. 
+One of the biggest impacts has been the reduction in passenger transport demand, due to a combination of government lockdowns and fears of contracting and spreading the virus when using mass transport modes. Therefore, a key question for the energy sector is whether changes to transport behaviours during the crisis may result in a permanent change in behaviour (and transport energy use) or if transport patterns will revert to ‘business as usual’ when the crisis ends. 
 
 If and when demand for passenger transport returns to pre-crisis levels will depend on a range of factors including perception of risk, cost, convenience, and the availability of alternative transport modes, all of which affect people’s mobility decisions.
 
@@ -40,12 +40,14 @@ We first plot the distribution of target variable bike users count with histogra
 
 
 
-> Week 10/19 (Haoming)
+> Week 10/18 (Haoming)
 
 plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
 
 
 <img src = "images/Simple_lr_num.png">
+
+The red lines in the scatter plots represent a simple linear regression fit. We can see both windspeed and gust follow a linear model, but have some outliers we may want to look into. For instance, there are multiple days with less than 20 new cases, but have suspisciously high user counts, which is around 6000. We can see similar behavior in temp and dew both follow more of a quadratic fit. 
 
 <img src = "images/Simple_lr_diff.png">
 
@@ -55,22 +57,18 @@ plot the distribution of target variable bike users count with histogram, probab
 
 Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure 4 shows a comparison between the actual bike usage data in 2019 and the predicted results using a multiple regression model.
 
-#### Figure 4. Comparison between actual bike usage data from 2019 and the predicted values using a multiple regression model.
 <img src = "images/Rough model 2019.png">
+<em>Figure 4. Comparison between actual bike usage data from 2019 and the predicted values using a multiple regression model.<em>
 
 
-Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset. A refined version of this model will be used to simulate different scenarios of the COVID-19 pandemic and see how they will affect bike path usage in 2021.
+Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
 
 ### Tree based Model
 > Week 10/19 (Haoming)
 
 <img src = "images/tree.png" width = 800>
 
-
-
-Although the correlations are giving a good overview of the most important numeric variables and multicolinerity among those variables, I wanted to get an overview of the most important variables including the categorical variables.
-
-<img src = "images/feature_im_dt2.png" width = 500>
+<img src = "images/feature_im_dt.png" width = 500>
 
 
 
