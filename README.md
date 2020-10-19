@@ -59,8 +59,7 @@ Having determined the factors that contribute to bicycle usage in Madison, a mod
 <img src = "images/Rough model 2019.png">
 
 
-
-Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
+Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset. A refined version of this model will be used to simulate different scenarios of the COVID-19 pandemic and see how they will affect bike path usage in 2021.
 
 ### Tree based Model
 > Week 10/19 (Haoming)
