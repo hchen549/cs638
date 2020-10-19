@@ -55,7 +55,7 @@ plot the distribution of target variable bike users count with histogram, probab
 
 Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure 4 shows a comparison between the actual bike usage data in 2019 and the predicted results using a multiple regression model.
 
-# Figure 4. Comparison between actual bike usage data from 2019 and the predicted values using a multiple regression model.
+#### Figure 4. Comparison between actual bike usage data from 2019 and the predicted values using a multiple regression model.
 <img src = "images/Rough model 2019.png">
 
 
