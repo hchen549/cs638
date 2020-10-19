@@ -68,6 +68,8 @@ Tested in this dataset, this model has a coefficient of determination or R^2 sco
 
 <img src = "images/tree.png" width = 800>
 
+Although the correlations are giving a good overview of the most important numeric variables and multicolinerity among those variables, I wanted to get an overview of the most important variables including the categorical variables.
+
 <img src = "images/feature_im_dt.png" width = 500>
 
 
