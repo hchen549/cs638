@@ -38,6 +38,14 @@ We first plot the distribution of target variable bike users count with histogra
 
 ## Preliminary Data Modeling
 
+> Week 10/18 (Haoming)
+
+plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
+
+<img src = "images/Simple_lr_num.png", width = 800>
+
+<img src = "images/Simple_lr_diff.png", width = 800>
+
 > Week 10/18 (Ian)
 
 Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure 4 shows a comparison between the actual bike usage data in 2019 and the predicted results using a multiple regression model.
@@ -48,12 +56,6 @@ Having determined the factors that contribute to bicycle usage in Madison, a mod
 
 Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
 
-> Week 10/18 (Haoming)
 
-plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
-
-<img src = "images/Simple_lr_num.png", width = 800>
-
-<img src = "images/Simple_lr_diff.png", width = 800>
 
 
