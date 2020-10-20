@@ -47,7 +47,7 @@ After plotting the heatmap between numerical variables and the target variable (
 <img src = "images/Simple_lr_num.png">
 
 
-Then I took the difference between prediction and the true value to examine the distribution of errors. It turns out that the error tends to have smaller variance when the windspeed and gust have a larger value. It implies that the prediction will be more stable when the input value of windspeed and gust are large. The error of temp and dew are not evenly distributed around the horizontal line, especially when the temp and dew have a small value. that is because the a linear relationship cannot capture the 
+Then I took the difference between prediction and the true value to examine the distribution of errors. It turns out that the error tends to have a smaller variance when the wind speed and gust have a larger value. It implies that the prediction will be more stable when the input value of wind speed and gust are large. The error of temp and dew are not evenly distributed around the horizontal line, especially when the temp and dew have a small value, which results from the failure of linear regression in these two cases. 
 
 <img src = "images/Simple_lr_diff.png">
 
@@ -69,6 +69,8 @@ Tested in this dataset, this model has a coefficient of determination or R^2 sco
 We then tried a different approach to make the prediction and we will compare the performance of tree-based models against linear regression later. I only show the first three layers of the decision tree simply because the plot of a deeper tree cannot fit into the screen. It can be seen that the temp variable is used as the primary splitting criterion in the first layer and is also used multiple times in the following layer, which indicates the importance of temp in separating the target variable.  
 
 <img src = "images/tree.png" width = 800>
+
+
 
 
 Although the correlations are giving a good overview of the most important numeric variables and multicollinearity among those variables, I wanted to get an overview of the most important variables including the categorical variables.
