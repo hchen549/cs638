@@ -21,7 +21,7 @@ If and when demand for passenger transport returns to pre-crisis levels will dep
 The data used for this analysis are collected from public online sources.<br>
 
 - [Weather1](https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5)
-- [weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
+- [Weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
 - [Covid cases](https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e22f5ba4f1f94e0bb0b9529dc82db6a3)
 
 ## Exploratory data analysis
@@ -66,9 +66,13 @@ Tested in this dataset, this model has a coefficient of determination or R^2 sco
 ### Tree based Model
 > Week 10/19 (Haoming)
 
+We try a 
+
 <img src = "images/tree.png" width = 800>
 
-Although the correlations are giving a good overview of the most important numeric variables and multicolinerity among those variables, I wanted to get an overview of the most important variables including the categorical variables.
+Although the correlations are giving a good overview of the most important numeric variables and multicollinearity among those variables, I wanted to get an overview of the most important variables including the categorical variables.
+
+The feature importance is calculated by its total contribution in reducing the impurity. In the context of the regression problem, the impurity is measured by the Mean Square Error within a node. The result of the tree-based model is almost consistent with the result of multiple linear regression, where weather information plays a dominant role in making prediction and information involves covid-19 are less determinant in both models. 
 
 <img src = "images/feature_im_dt.png" width = 500>
 
