@@ -40,14 +40,14 @@ We first plot the distribution of target variable bike users count with histogra
 
 
 
-> Week 10/18 (Haoming)
+> Week 10/19 (Haoming)
 
-plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
-
+After plotting the heatmap between numerical variables and the target variable (Count), we started to build simple linear regression to check if there is a linear relationship between each numerical variable and Count. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow a linear model, but have some outliers we may want to look into. For instance, there are multiple days with less than 20 new cases but have suspiciously high user counts, which is around 6000. We can see similar behavior in temp and dew both follow more of a quadratic fit. 
 
 <img src = "images/Simple_lr_num.png">
 
-The red lines in the scatter plots represent a simple linear regression fit. We can see both windspeed and gust follow a linear model, but have some outliers we may want to look into. For instance, there are multiple days with less than 20 new cases, but have suspisciously high user counts, which is around 6000. We can see similar behavior in temp and dew both follow more of a quadratic fit. 
+
+Then I took the difference between prediction and the true value to examine the distribution of errors. It turns out that the error tends to have smaller variance when the windspeed and gust have a larger value. It implies that the prediction will be more stable when the input value of windspeed and gust are large. The error of temp and dew are not evenly distributed around the horizontal line, especially when the temp and dew have a small value. that is because the a linear relationship cannot capture the 
 
 <img src = "images/Simple_lr_diff.png">
 
@@ -66,9 +66,10 @@ Tested in this dataset, this model has a coefficient of determination or R^2 sco
 ### Tree based Model
 > Week 10/19 (Haoming)
 
-We try a 
+We then tried a different approach to make the prediction and we will compare the performance of tree-based models against linear regression later. I only show the first three layers of the decision tree simply because the plot of a deeper tree cannot fit into the screen. It can be seen that the temp variable is used as the primary splitting criterion in the first layer and is also used multiple times in the following layer, which indicates the importance of temp in separating the target variable.  
 
 <img src = "images/tree.png" width = 800>
+
 
 Although the correlations are giving a good overview of the most important numeric variables and multicollinearity among those variables, I wanted to get an overview of the most important variables including the categorical variables.
 
