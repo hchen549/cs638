@@ -63,7 +63,7 @@ We first plot the distribution of target variable bike users count with histogra
 
 <img src = "images/correlation_with_count.png" width = 400>
 
-<img src = "images/heatmap.png" width = 400>
+<img src = "images/heamap_capital.PNG" width = 600>
 
 ## Preliminary Data Modeling
 
