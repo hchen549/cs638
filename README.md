@@ -7,7 +7,6 @@
 - [Exploratory data analysis](#Exploratory-data-analysis)
 - Regression model
 - [Tree based model](#Tree-based-Model)
-- [Conclusions](#Conclusion)
 - [To-do](#To-do)
 
 ## Background
@@ -120,7 +119,7 @@ The data used for this analysis are collected from public online sources.<br>
 
 
 
-> To-do
+## To-do
 
 ⋅⋅* Data
 1. Find the availablity of other public transporation (bus), 
