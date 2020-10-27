@@ -8,6 +8,7 @@
 - Regression model
 - Tree-based model
 - Conclusions
+- To-do
 
 ## Background
 
@@ -96,12 +97,6 @@ The feature importance is calculated by its total contribution in decreasing the
 <img src = "images/feature_im_dt.png" width = 500>
 
 
-> To-do
-
-1. Run Random Forest models with and without covid-related variables on two locations. As a result, there will be four models in total.
-2. Evaluate the performance of models within each location and examine the importance and contribution of covid-related factors to the accuracy of the tree-models
-3. Check whether the result from tree models are consistent with the regression models
-
 ### Polynomial Ridge Regression
 > Week 10/26 (Ian)
 
@@ -122,4 +117,17 @@ The data used for this analysis are collected from public online sources.<br>
 - [Weather1](https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5)
 - [Weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
 - [Covid cases](https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e22f5ba4f1f94e0bb0b9529dc82db6a3)
+
+
+> To-do
+
+⋅⋅* Data
+1. Find the availablity of other public transporation (bus), 
+2. Add variables that can describe people's attitude towards COVID-19
+3. Add government response to the COVID-19 (For example: Reopen plan and stay-at-home order)
+
+⋅⋅* Model
+1. Run Random Forest models with and without covid-related variables on two locations. As a result, there will be four models in total.
+2. Evaluate the performance of models within each location and examine the importance and contribution of covid-related factors to the accuracy of the tree-models
+3. Check whether the result from tree models are consistent with the regression models
 
