@@ -45,9 +45,9 @@ Questions
 <img src = "images/diff_in_counts_scatter.PNG" width = 800>
 
 
-<img src = "images/diff_in_counts_histogram.PNG" width = 800>
+<img src = "images/diff_in_counts_histogram.png" width = 800>
 
-<img src = "images/heamap_capital.PNG" width = 800>
+<img src = "images/User_composition.png" width = 800>
 
 
 
