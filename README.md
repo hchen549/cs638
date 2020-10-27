@@ -38,9 +38,11 @@ In the end, this project will create multiple genres of model that can take the 
 ## Visualize the impact of COVID-19
 
 Questions
-- Whether COVID19 has notable impact on the bike usage level
-- Whether COVID19 has consistent impact on different bike paths 
-- What causes the COVID19 to show disparate effect on different bike paths (Internal factors: User composition. External factors: Location of bike path and availability of other transporation)
+- Whether COVID19 has a notable impact on the bike usage level
+- Whether COVID19 has a consistent impact on different bike paths 
+- What causes the COVID19 to show the disparate effect on different bike paths (Internal factors: User composition. External factors: Location of bike path and availability of other transportation)
+
+<img src = "images/correlation_with_count.png" width = 400>
 
 
 
