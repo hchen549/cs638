@@ -50,7 +50,8 @@ In the following scatter plots and histogram, we take the difference of bike use
 <img src = "images/diff_in_counts_histogram.png" width = 800>
 
 The user composition is one of the possible reasons that could explain the difference behind those two locations.
-Captial has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilitent during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilitent the bike path will be during the COVID-19
+Captial has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
+
 
 <img src = "images/User_composition.png" width = 800>
 
@@ -136,7 +137,7 @@ The data used for this analysis are collected from public online sources.<br>
 ## To-do
 
 ⋅⋅* Data
-1. Find the availablity of other public transporation (bus), 
+1. Find the availability of other public transportations (bus), 
 2. Add variables that can describe people's attitude towards COVID-19
 3. Add government response to the COVID-19 (For example: Reopen plan and stay-at-home order)
 
