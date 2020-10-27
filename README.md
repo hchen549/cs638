@@ -42,7 +42,14 @@ Questions
 - Whether COVID19 has a consistent impact on different bike paths 
 - What causes the COVID19 to show the disparate effect on different bike paths (Internal factors: User composition. External factors: Location of bike path and availability of other transportation)
 
-<img src = "images/correlation_with_count.png" width = 400>
+<img src = "images/diff_in_counts_scatter.PNG" width = 800>
+
+
+<img src = "images/diff_in_counts_histogram.PNG" width = 800>
+
+<img src = "images/heamap_capital.PNG" width = 800>
+
+
 
 
 
