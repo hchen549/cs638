@@ -95,6 +95,13 @@ The feature importance is calculated by its total contribution in decreasing the
 
 <img src = "images/feature_im_dt.png" width = 500>
 
+
+> To-do
+
+1. Run Random Forest models with and without covid-related variables on two locations. As a result, there will be four models in total.
+2. Evaluate the performance of models within each location and examine the importance and contribution of covid-related factors to the accuracy of the tree-models
+3. Check whether the result from tree models are consistent with the regression models
+
 ### Polynomial Ridge Regression
 > Week 10/26 (Ian)
 
