@@ -1,13 +1,13 @@
 ## Outline
 
-- Background
+- Background[see above](#Background)
 - Introduction
 - Objectives
 - Visualize the impact of COVID-19
 - Exploratory data analysis
 - Regression model
 - Tree-based model
-- Conclusions
+- Conclusions[see above](#Conclusion)
 - To-do
 
 ## Background
