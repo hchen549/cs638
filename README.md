@@ -79,5 +79,13 @@ The feature importance is calculated by its total contribution in decreasing the
 
 <img src = "images/feature_im_dt.png" width = 500>
 
+### Polynomial Ridge Regression
+> Week 10/26 (Ian)
 
+Some nonlinear relationships between variables were identified, so we decided to change the model from a multiple linear regression to a polynomial ridge regression with a polynomial degree of 2. The 2nd degree polynomial transformation is done to allow the model to express the quadratic relationship between variables. The model was trained using data from 2015-2017 and tested on data from 2018-2020. We wanted to see how the model will perform when accounting for COIVD-19 cases.
 
+<img src = "images/Plot for 26 OCt.jpg" width = 800>
+
+The model performs better when there are no COVID-19 cases. It is 86% accurate when predicting the data in 2018 but only 73% accurate when predicting the data in 2020. This means that COVID-19's impact to bike usage is relatively small yet cannot be ignored. 
+
+We will improve this model and then use it to predict several different outcomes by anticipating 3 different COVID-19 scenarios: rise, stagnation, and decline.
