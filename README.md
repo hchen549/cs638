@@ -2,11 +2,11 @@
 
 - [Background](#Background)
 - [Introduction](#Introduction)
-- [Objectives](Objectives)
-- Visualize the impact of COVID-19
-- Exploratory data analysis
+- [Objectives](#Objectives)
+- [Visualize the impact of COVID-19](#Visualize the impact of COVID-19)
+- [Exploratory data analysis](#Exploratory data analysis)
 - Regression model
-- [Tree-based model](#Tree based Model)
+- [Tree based model](#Tree based Model)
 - [Conclusions](#Conclusion)
 - [To-do](#To-do)
 
