@@ -1,4 +1,13 @@
-# 
+## Outline
+
+- Background
+- Introduction
+- Objectives
+- Visualize the impact of COVID-19
+- Exploratory data analysis
+- Regression model
+- Tree-based model
+- Conclusions
 
 ## Background
 
@@ -9,20 +18,23 @@ One of the biggest impacts has been the reduction in passenger transport demand,
 If and when demand for passenger transport returns to pre-crisis levels will depend on a range of factors including perception of risk, cost, convenience, and the availability of alternative transport modes, all of which affect people’s mobility decisions.
 
 
+## Introduction
+
+To help the City of Madison better identify and understand any changes in bicycle usage and the utilisation of bike paths in Madison due to the COVID-19 pandemic, this project will examine factors that may contribute to these changes. These factors include the weather, seasonal variation, major events, COVID-19 cases, and deaths related to the pandemic. 
+
+Moreover, we will conduct a comparative analysis to see whether the COVID19 have significant impact on the bike usage level in two popular bike paths. If so, we also want to find out how does the impact of COVID-19 vary from location to location?
+
+In the end, this project will create multiple genres of model that can take the pandemic into account and predict bike path usage in Madison in the near future to help the City of Madison make plans and policies regarding bicycles and bike paths in the city.
+
+
 ## Objectives
 
 - Determine what factors may contribute to the change in bike path usage
 - Determine the significance of each factor, especially COVID-19, in changing the bike path usage in Madison
-- Develop a model to predict bicycle path usage in the near future
+- Determine the causes for the different impact of COVID-19 on two distinct bike paths
+- Develop models to predict bicycle path usage in the near future
 
 
-## Data sources
-
-The data used for this analysis are collected from public online sources.<br>
-
-- [Weather1](https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5)
-- [Weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
-- [Covid cases](https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e22f5ba4f1f94e0bb0b9529dc82db6a3)
 
 ## Exploratory data analysis
 
@@ -37,8 +49,6 @@ We first plot the distribution of target variable bike users count with histogra
 <img src = "images/heatmap.png" width = 400>
 
 ## Preliminary Data Modeling
-
-
 
 > Week 10/19 (Haoming)
 
@@ -87,3 +97,14 @@ Some nonlinear relationships between variables were identified, so we decided to
 The model performs better when there are no COVID-19 cases. It is 86% accurate when predicting the data in 2018 but only 73% accurate when predicting the data in 2020. This means that COVID-19's impact to bike usage is relatively small yet cannot be ignored. 
 
 We will improve this model and then use it to predict several different outcomes by anticipating 3 different COVID-19 scenarios: rise, stagnation, and decline.
+
+
+
+## Data sources
+
+The data used for this analysis are collected from public online sources.<br>
+
+- [Weather1](https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5)
+- [Weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
+- [Covid cases](https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e22f5ba4f1f94e0bb0b9529dc82db6a3)
+
