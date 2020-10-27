@@ -42,10 +42,15 @@ Questions
 - Whether COVID19 has a consistent impact on different bike paths 
 - What causes the COVID19 to show the disparate effect on different bike paths (Internal factors: User composition. External factors: Location of bike path and availability of other transportation)
 
+
+In the following scatter plots and histogram, we take the difference of bike user counts between 2020 and 2019. It can be seen that Captial was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
+
 <img src = "images/diff_in_counts_scatter.PNG" width = 800>
 
-
 <img src = "images/diff_in_counts_histogram.png" width = 800>
+
+The user composition is one of the possible reasons that could explain the difference behind those two locations.
+Captial has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilitent during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilitent the bike path will be during the COVID-19
 
 <img src = "images/User_composition.png" width = 800>
 
