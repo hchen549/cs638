@@ -9,24 +9,44 @@
 - [Tree based model](#Tree-based-Model)
 - [To-do](#To-do)
 
-## Introduction
+## 1. Introduction
 
 The coronavirus disease-19 (COVID-19) pandemic radically changed the lives of many people, including those living in Madison, Wisconsin. In March 2020, Governor Tony Evers issued a stay-at-home order and prompted schools to move to online instruction. With almost everyone staying home for most of the day, many public facilities such as public transportation and academic and office buildings saw a change in their usage. 
 
 As schools, offices, and many other places people regularly visited closed, fewer people needed to commute during the day and hence transportation may have become affected by the pandemic, including bicycle or bike usage. People were advised to avoid using public transportation such as buses. As a result, more people may have become more inclined to use their own mode of transportation such as their bicycles. The purpose of this report is to investigate this hypothesis. 
 
-To help the City of Madison better identify and understand any changes in bicycle usage and the utilisation of bike paths in Madison due to the COVID-19 pandemic, this project will examine factors that may contribute to these changes. These factors include the weather, seasonal variation, major events, COVID-19 cases, and deaths related to the pandemic. In the end, this project will create a model that can take the pandemic into account and predict bike path usage in Madison in the near future to help the City of Madison make plans and policies regarding bicycles and bike paths in the city.
+To help the City of Madison better identify and understand any changes in bicycle usage and the utilisation of bike paths in Madison due to the COVID-19 pandemic, this project examines factors that may contribute to these changes. These factors include the weather, seasonal variation, major events, and COVID-19 cases. In the end, this project creates a model that can take the pandemic into account and predict bike path usage in Madison in the near future to help the City of Madison make plans and policies regarding bicycles and bike paths in the city.
 
+## 2. Historical Bike Traffic
 
-## Objectives
+(TO DO - Display data from years before 2020. Use plots from our first presentation.)
 
-- Determine what factors may contribute to the change in bike path usage
-- Determine the significance of each factor, especially COVID-19, in changing the bike path usage in Madison
-- Determine the causes for the different impact of COVID-19 on two distinct bike paths
-- Develop models to predict bicycle path usage in the near future
+## 3. Bike Utilization Factors
 
+(TO DO - Display plots about correlations of factors to bike usage.)
 
-## Visualize the impact of COVID-19
+## 4. Modeling
+
+### 4.1. Multiple Linear Regression
+
+Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure 4 shows a comparison between the actual bike usage data in 2019 and the predicted results using a multiple regression model.
+
+<img src = "images/Rough model 2019.png">
+
+Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
+
+### 4.2. Polynomial Ridge Regression
+> Week 10/26 (Ian)
+
+Some nonlinear relationships between variables were identified, so we decided to change the model from a multiple linear regression to a polynomial ridge regression with a polynomial degree of 2. The 2nd degree polynomial transformation is done to allow the model to express the quadratic relationship between variables. The model was trained using data from 2015-2017 and tested on data from 2018-2020. We wanted to see how the model will perform when accounting for COIVD-19 cases.
+
+<img src = "images/Plot for 26 OCt.jpg" width = 800>
+
+The model performs better when there are no COVID-19 cases. It is 86% accurate when predicting the data in 2018 but only 73% accurate when predicting the data in 2020. This means that COVID-19's impact to bike usage is relatively small yet cannot be ignored. 
+
+We will improve this model and then use it to predict several different outcomes by anticipating 3 different COVID-19 scenarios: rise, stagnation, and decline.
+
+## 2. Visualize the impact of COVID-19
 
 Questions
 - Whether COVID19 has a notable impact on the bike usage level
@@ -75,15 +95,7 @@ Then I took the difference between prediction and the true value to examine the 
 
 <img src = "images/Simple_lr_diff.png">
 
-### Multiple Linear Regression
 
-> Week 10/18 (Ian)
-
-Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure 4 shows a comparison between the actual bike usage data in 2019 and the predicted results using a multiple regression model.
-
-<img src = "images/Rough model 2019.png">
-
-Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
 
 ### Tree based Model
 > Week 10/19 (Haoming)
@@ -102,16 +114,7 @@ The feature importance is calculated by its total contribution in decreasing the
 <img src = "images/feature_im_dt.png" width = 500>
 
 
-### Polynomial Ridge Regression
-> Week 10/26 (Ian)
 
-Some nonlinear relationships between variables were identified, so we decided to change the model from a multiple linear regression to a polynomial ridge regression with a polynomial degree of 2. The 2nd degree polynomial transformation is done to allow the model to express the quadratic relationship between variables. The model was trained using data from 2015-2017 and tested on data from 2018-2020. We wanted to see how the model will perform when accounting for COIVD-19 cases.
-
-<img src = "images/Plot for 26 OCt.jpg" width = 800>
-
-The model performs better when there are no COVID-19 cases. It is 86% accurate when predicting the data in 2018 but only 73% accurate when predicting the data in 2020. This means that COVID-19's impact to bike usage is relatively small yet cannot be ignored. 
-
-We will improve this model and then use it to predict several different outcomes by anticipating 3 different COVID-19 scenarios: rise, stagnation, and decline.
 
 
 
