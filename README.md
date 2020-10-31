@@ -31,16 +31,17 @@ To help the City of Madison better identify and understand any changes in bicycl
 
 Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure 4 shows a comparison between the actual bike usage data in 2019 and the predicted results using a multiple regression model.
 
-<img src = "images/Rough model 2019.png">
+(TO DO - Display plots showing the MR model trained on 2015-2017 data.)
+(TO DO - Display plots showing the MR model trained on 2018-2020 data.)
 
 Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
 
 ### 4.2. Polynomial Ridge Regression
-> Week 10/26 (Ian)
 
 Some nonlinear relationships between variables were identified, so we decided to change the model from a multiple linear regression to a polynomial ridge regression with a polynomial degree of 2. The 2nd degree polynomial transformation is done to allow the model to express the quadratic relationship between variables. The model was trained using data from 2015-2017 and tested on data from 2018-2020. We wanted to see how the model will perform when accounting for COIVD-19 cases.
 
-<img src = "images/Plot for 26 OCt.jpg" width = 800>
+(TO DO - Display plots showing the PR model trained on 2015-2017 data.)
+(TO DO - Display plots showing the PR model trained on 2018-2020 data.)
 
 The model performs better when there are no COVID-19 cases. It is 86% accurate when predicting the data in 2018 but only 73% accurate when predicting the data in 2020. This means that COVID-19's impact to bike usage is relatively small yet cannot be ignored. 
 
