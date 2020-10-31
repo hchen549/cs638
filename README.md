@@ -23,7 +23,19 @@ To help the City of Madison better identify and understand any changes in bicycl
 
 ## 3. Bike Utilization Factors
 
-(TO DO - Display plots about correlations of factors to bike usage.)
+There are possibly many factors that contribute to bike utilization. This project explored weather variables, namely rain/precipitation, snow, humidity, air pressure, temperature, and windspeed.
+
+<img src = "images/correlation_with_count.png" width = 400>
+
+<img src = "images/heamap_capital.PNG" width = 600>
+
+After plotting the heatmap between numerical variables and the target variable (Count), we started to build simple linear regression to check if there is a linear relationship between each numerical variable and Count. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow a linear model, but have some outliers we may want to look into. For instance, there are multiple days with less than 20 new cases but have suspiciously high user counts, which is around 6000. We can see similar behavior in temp and dew both follow more of a quadratic fit. 
+
+<img src = "images/Simple_lr_num.png">
+
+Then I took the difference between prediction and the true value to examine the distribution of errors. It turns out that the error tends to have a smaller variance when the wind speed and gust have a larger value. It implies that the prediction will be more stable when the input value of wind speed and gust are large. The error of temp and dew are not evenly distributed around the horizontal line, especially when the temp and dew have a small value, which results from the failure of linear regression in these two cases. 
+
+<img src = "images/Simple_lr_diff.png">
 
 ## 4. Modeling
 
@@ -71,30 +83,6 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
 
 
 
-## Exploratory data analysis
-
-> Week 10/12 (Haoming)
-
-We first plot the distribution of target variable bike users count with histogram, probability plot, and box plot.
-
-
-
-<img src = "images/correlation_with_count.png" width = 400>
-
-<img src = "images/heamap_capital.PNG" width = 600>
-
-## Preliminary Data Modeling
-
-> Week 10/19 (Haoming)
-
-After plotting the heatmap between numerical variables and the target variable (Count), we started to build simple linear regression to check if there is a linear relationship between each numerical variable and Count. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow a linear model, but have some outliers we may want to look into. For instance, there are multiple days with less than 20 new cases but have suspiciously high user counts, which is around 6000. We can see similar behavior in temp and dew both follow more of a quadratic fit. 
-
-<img src = "images/Simple_lr_num.png">
-
-
-Then I took the difference between prediction and the true value to examine the distribution of errors. It turns out that the error tends to have a smaller variance when the wind speed and gust have a larger value. It implies that the prediction will be more stable when the input value of wind speed and gust are large. The error of temp and dew are not evenly distributed around the horizontal line, especially when the temp and dew have a small value, which results from the failure of linear regression in these two cases. 
-
-<img src = "images/Simple_lr_diff.png">
 
 
 
