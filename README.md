@@ -9,22 +9,13 @@
 - [Tree based model](#Tree-based-Model)
 - [To-do](#To-do)
 
-## Background
-
-The restrictions put in place to limit the diffusion and impacts of Covid-19 have had a widespread impact on people’s lives, and the way energy is used across entire economies.
-
-One of the biggest impacts has been the reduction in passenger transport demand, due to a combination of government lockdowns and fears of contracting and spreading the virus when using mass transport modes. Therefore, a key question for the energy sector is whether changes to transport behaviours during the crisis may result in a permanent change in behaviour (and transport energy use) or if transport patterns will revert to ‘business as usual’ when the crisis ends. 
-
-If and when demand for passenger transport returns to pre-crisis levels will depend on a range of factors including perception of risk, cost, convenience, and the availability of alternative transport modes, all of which affect people’s mobility decisions.
-
-
 ## Introduction
 
-To help the City of Madison better identify and understand any changes in bicycle usage and the utilisation of bike paths in Madison due to the COVID-19 pandemic, this project will examine factors that may contribute to these changes. These factors include the weather, seasonal variation, major events, COVID-19 cases, and deaths related to the pandemic. 
+The coronavirus disease-19 (COVID-19) pandemic radically changed the lives of many people, including those living in Madison, Wisconsin. In March 2020, Governor Tony Evers issued a stay-at-home order and prompted schools to move to online instruction. With almost everyone staying home for most of the day, many public facilities such as public transportation and academic and office buildings saw a change in their usage. 
 
-Moreover, we will conduct a comparative analysis to see whether the COVID19 has a significant impact on the bike usage level in two popular bike paths. If so, we also want to find out how does the impact of COVID-19 varies from location to location?
+As schools, offices, and many other places people regularly visited closed, fewer people needed to commute during the day and hence transportation may have become affected by the pandemic, including bicycle or bike usage. People were advised to avoid using public transportation such as buses. As a result, more people may have become more inclined to use their own mode of transportation such as their bicycles. The purpose of this report is to investigate this hypothesis. 
 
-In the end, this project will create multiple genres of model that can take the pandemic into account and predict bike path usage in Madison in the near future to help the City of Madison make plans and policies regarding bicycles and bike paths in the city.
+To help the City of Madison better identify and understand any changes in bicycle usage and the utilisation of bike paths in Madison due to the COVID-19 pandemic, this project will examine factors that may contribute to these changes. These factors include the weather, seasonal variation, major events, COVID-19 cases, and deaths related to the pandemic. In the end, this project will create a model that can take the pandemic into account and predict bike path usage in Madison in the near future to help the City of Madison make plans and policies regarding bicycles and bike paths in the city.
 
 
 ## Objectives
