@@ -71,15 +71,16 @@ Tested in this dataset, this model has an accuracy of 82%. For a perfect model, 
 
 ### 4.2. Polynomial Ridge Regression
 
-Some nonlinear relationships between variables were identified, so we decided to change the model from a multiple linear regression to a polynomial ridge regression with a polynomial degree of 2. The 2nd degree polynomial transformation is done to allow the model to express the quadratic relationship between variables. The model was trained using data from 2015-2017 and tested on data from 2018-2020. We wanted to see how the model will perform when accounting for COIVD-19 cases.
+Some nonlinear relationships between variables were identified, so we decided to change the model from a multiple linear regression to a polynomial ridge regression with a polynomial degree of 2. The 2nd degree polynomial transformation is done to allow the model to express the quadratic relationship between variables. We wanted to see how the model will perform when accounting for COVID-19 cases. Figure [] shows a comparison between the actual bike usage data and the predicted results in 2019 and 2020 using a polynomial ridge regression model. The model was trained using data from 2015 to 2017.
 
-(TO DO - Display plots showing the PR model trained on 2015-2017 data.)
-(TO DO - Display plots showing the PR model trained on 2018-2020 data.)
+<img src = "images/PR2019.png">
+<img src = "images/PR2020.png">
 
-The model performs better when there are no COVID-19 cases. It is 86% accurate when predicting the data in 2018 but only 73% accurate when predicting the data in 2020. This means that COVID-19's impact to bike usage is relatively small yet cannot be ignored. 
+This model performs better than the multiple regression model, yielding an accuracy of 88% in 2019 and 76% in 2020. Like the multiple regression model, this model also performs better when there are no COVID-19 cases. This further emphasizes that COVID-19's impact to bike usage cannot be ignored. Figure [] shows the performance of the model when predicting data in 2017 after being trained using data from 2018 to 2020.
 
-We will improve this model and then use it to predict several different outcomes by anticipating 3 different COVID-19 scenarios: rise, stagnation, and decline.
+<img src = "images/Scatter2017b.png" width = 600>
 
+Tested in this dataset, this model has an accuracy of 86%. The 0.84 slope in figure [] indicates that the model is better at predicting than the multiple regression model, but it still has a low bias and regularly underestimates the number of bikes.
 ## 5. The Impact of COVID-19
 
 Questions
