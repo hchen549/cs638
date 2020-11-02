@@ -28,7 +28,6 @@ There are possibly many factors that contribute to bike utilization. This projec
 
 <img src = "images/correlation_with_count.png" width = 400>
 
-<img src = "images/heamap_capital.PNG" width = 600>
 
 After plotting the heatmap between numerical variables and the target variable (Count), we started to build simple linear regression to check if there is a linear relationship between each numerical variable and Count. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow a linear model, but have some outliers we may want to look into. For instance, there are multiple days with less than 20 new cases but have suspiciously high user counts, which is around 6000. We can see similar behavior in temp and dew both follow more of a quadratic fit. 
 
@@ -43,6 +42,12 @@ Then I took the difference between prediction and the true value to examine the 
 <p float="left" align="middle">
   <img src="/images/lasso_capital1.png" width="45%" />
   <img src="/images/lasso_monroe1.png" width="45%" /> 
+</p>
+
+
+<p float="left" align="middle">
+  <img src="/images/heatmap_capital.PNG" width="45%" />
+  <img src="/images/heatmap_monroe.PNG" width="45%" /> 
 </p>
 
 
