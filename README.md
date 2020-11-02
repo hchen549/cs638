@@ -54,7 +54,7 @@ Then I took the difference between prediction and the true value to examine the 
 
 
 
-## 4. Modeling
+## 4. Modeling Bike Utilization
 
 ### 4.1. Multiple Linear Regression
 
@@ -65,7 +65,7 @@ Having determined the factors that contribute to bicycle usage in Madison, a mod
 
 Tested in this dataset, this model has an accuracy of 82%. The model has a low bias as shown in figure [].
 
-
+<img src = "images/Scatter2017.png" width = 800>
 
 ### 4.2. Polynomial Ridge Regression
 
@@ -78,7 +78,7 @@ The model performs better when there are no COVID-19 cases. It is 86% accurate w
 
 We will improve this model and then use it to predict several different outcomes by anticipating 3 different COVID-19 scenarios: rise, stagnation, and decline.
 
-## 2. Visualize the impact of COVID-19
+## 5. The Impact of COVID-19
 
 Questions
 - Whether COVID19 has a notable impact on the bike usage level
@@ -101,8 +101,9 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
 
 
 
+## 6. Predicting Bike Utilization in the Near Future
 
-
+Having developed models to visualize bike utilization, we can use them to predict bike utilization in the near future. 
 
 
 ### Tree based Model
