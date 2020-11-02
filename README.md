@@ -65,13 +65,9 @@ Having determined the factors that contribute to bicycle usage in Madison, a mod
 
 This model could predict the data in 2019 with an 83% accuracy, while it could only achieve 73% accuracy when predicting data in 2020. This suggests that COVID-19 has had a relatively small yet not insignificant effect on bike utilization in Madison. As a result, COVID-19 data needed to be incorporated into the model training. Figure [] shows the performance of the model when predicting data in 2017 after being trained using data from 2018 to 2020.
 
-(TO DO - Display plots showing the MR model trained on 2018-2020 data.)
-
-Tested in this dataset, this model has an accuracy of 82%. The model has a slightly low bias as shown in figure [].
-
 <img src = "images/Scatter2017.png" width = 600>
 
-For a perfect model, the slope would be 1.0, which indicates a perfect correlation. The 0.8 slope in figure [] indicates that the model regularly underestimates the number of bikes.
+Tested in this dataset, this model has an accuracy of 82%. For a perfect model, the slope would be 1.0, which indicates a perfect correlation. The 0.8 slope in figure [] indicates that the model has a low bias and regularly underestimates the number of bikes.
 
 ### 4.2. Polynomial Ridge Regression
 
