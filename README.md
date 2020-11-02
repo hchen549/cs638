@@ -58,14 +58,19 @@ Then I took the difference between prediction and the true value to examine the 
 
 ### 4.1. Multiple Linear Regression
 
-Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure 4 shows a comparison between the actual bike usage data in 2019 and the predicted results using a multiple regression model.
+Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure [] shows a comparison between the actual bike usage data and the predicted results in 2019 and 2020 using a multiple regression model. The model was trained using data from 2015 to 2017.
 
 (TO DO - Display plots showing the MR model trained on 2015-2017 data.)
+
+This model could predict the data in 2019 with an 83% accuracy, while it could only achieve 73% accuracy when predicting data in 2020. This suggests that COVID-19 has had a relatively small yet not insignificant effect on bike utilization in Madison. As a result, COVID-19 data needed to be incorporated into the model training. Figure [] shows the performance of the model when predicting data in 2017 after being trained using data from 2018 to 2020.
+
 (TO DO - Display plots showing the MR model trained on 2018-2020 data.)
 
 Tested in this dataset, this model has an accuracy of 82%. The model has a slightly low bias as shown in figure [].
 
-<img src = "images/Scatter2017.png" width = 800>
+<img src = "images/Scatter2017.png" width = 600>
+
+For a perfect model, the slope would be 1.0, which indicates a perfect correlation. The 0.8 slope in figure [] indicates that the model regularly underestimates the number of bikes.
 
 ### 4.2. Polynomial Ridge Regression
 
