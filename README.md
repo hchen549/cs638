@@ -60,7 +60,8 @@ Then I took the difference between prediction and the true value to examine the 
 
 Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure [] shows a comparison between the actual bike usage data and the predicted results in 2019 and 2020 using a multiple regression model. The model was trained using data from 2015 to 2017.
 
-(TO DO - Display plots showing the MR model trained on 2015-2017 data.)
+<img src = "images/MR2019.png">
+<img src = "images/MR2020.png">
 
 This model could predict the data in 2019 with an 83% accuracy, while it could only achieve 73% accuracy when predicting data in 2020. This suggests that COVID-19 has had a relatively small yet not insignificant effect on bike utilization in Madison. As a result, COVID-19 data needed to be incorporated into the model training. Figure [] shows the performance of the model when predicting data in 2017 after being trained using data from 2018 to 2020.
 
