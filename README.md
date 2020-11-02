@@ -63,7 +63,9 @@ Having determined the factors that contribute to bicycle usage in Madison, a mod
 (TO DO - Display plots showing the MR model trained on 2015-2017 data.)
 (TO DO - Display plots showing the MR model trained on 2018-2020 data.)
 
-Tested in this dataset, this model has a coefficient of determination or R^2 score of 0.78. This is not a very accurate model since some predicted values are off by a margin and can even be negative values, but it does a decent job of predicting and capturing the pattern in the dataset.
+Tested in this dataset, this model has an accuracy of 82%. The model has a low bias as shown in figure [].
+
+
 
 ### 4.2. Polynomial Ridge Regression
 
