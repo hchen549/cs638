@@ -38,6 +38,12 @@ Then I took the difference between prediction and the true value to examine the 
 
 <img src = "images/Simple_lr_diff.png">
 
+> Week 11/02 (Haoming)
+
+![alt-text-1]("images/lasso_capital.png" "Lasso Capital") ![alt-text-2]("images/Lasso_monroe.png" "Lasso Monroe")
+
+
+
 ## 4. Modeling
 
 ### 4.1. Multiple Linear Regression
