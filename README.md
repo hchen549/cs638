@@ -63,7 +63,7 @@ Having determined the factors that contribute to bicycle usage in Madison, a mod
 (TO DO - Display plots showing the MR model trained on 2015-2017 data.)
 (TO DO - Display plots showing the MR model trained on 2018-2020 data.)
 
-Tested in this dataset, this model has an accuracy of 82%. The model has a low bias as shown in figure [].
+Tested in this dataset, this model has an accuracy of 82%. The model has a slightly low bias as shown in figure [].
 
 <img src = "images/Scatter2017.png" width = 800>
 
@@ -103,7 +103,7 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
 
 ## 6. Predicting Bike Utilization in the Near Future
 
-Having developed models to visualize bike utilization, we can use them to predict bike utilization in the near future. 
+Having developed models to visualize bike utilization, we can use them to predict bike utilization in the near future. Due to the lack of weather forecasts for Madison in 2021, we assumed that the weather in 2021 will be similar to that in 2017. Both the multiple regression model and the polynomial ridge model were used to predict bike utilization in 3 different COVID-19 scenarios: steady decline, stagnation, and steady increase, shown in Figures [], [], and [], respectively.
 
 
 ### Tree based Model
