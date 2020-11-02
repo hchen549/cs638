@@ -46,8 +46,8 @@ Then I took the difference between prediction and the true value to examine the 
 
 
 <p float="left" align="middle">
-  <img src="/images/heatmap_capital.png" width="45%" />
-  <img src="/images/heatmap_monroe.png" width="45%" /> 
+  <img src="/images/heatmap_capital.png" width="49.5%" />
+  <img src="/images/heatmap_monroe.png" width="49.5%" /> 
 </p>
 
 
