@@ -29,8 +29,8 @@ There are possibly many factors that contribute to bike utilization. This projec
 <img src = "images/correlation_with_count.png" width = 400>
 
 <p float="left" align="middle">
-  <img src="/images/heatmap_capital.png" width="500" />
-  <img src="/images/heatmap_monroe.png" width="500" /> 
+  <img src="/images/heatmap_capital.png" width="450" />
+  <img src="/images/heatmap_monroe.png" width="450" /> 
 </p>
 
 
