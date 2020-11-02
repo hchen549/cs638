@@ -40,6 +40,12 @@ Then I took the difference between prediction and the true value to examine the 
 
 > Week 11/02 (Haoming)
 
+<p float="left" align="middle">
+  <img src="/images/lasso_capital.png" width="100" />
+  <img src="/images/lasso_monroe.png" width="100" /> 
+</p>
+
+
 ![alt-text-1](images/lasso_capital.png "Lasso Capital") ![alt-text-2](images/lasso_monroe.png "Lasso Monroe")
 
 
