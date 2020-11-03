@@ -44,6 +44,14 @@ Then I took the difference between prediction and the true value to examine the 
 
 > Week 11/02 (Haoming)
 
+In this section, we explore feature importance at two bike path locations (Capital and Monroe).  The following figure shows how factors' coefficients change with the penalty  term assigned in Lasso regression model. We observe that the trend displays three remarkable differences regarding feature importance between these two locations. 
+
+First of all, other than season and month factors, the year factor (2020) also has a large absolute coefficient at Monroe when we assign a smaller penalty to the model. Indeed, the year 2020 has double meanings in this context. Year 2020 not only represents a calendar year, but also indicates the existence of covid-19 as a boolean type variable. On the contrary, we don't see any covid-related variables have large impact on the model at capital.
+
+Moreover, when we increase the penalty term to 100, all the coeffecients converge to zero at Monroe. However, max_temp and windspeed at capital are not affected by the penalty term at all, since these two variables display a nearly horizontal line throughout the plot. Their resillience against the penalty force indicates their great contribution to the model at capital.
+
+Last but not least, in the range between 
+
 <p float="left" align="middle">
   <img src="/images/lasso_capital1.png" width="45%" />
   <img src="/images/lasso_monroe1.png" width="45%" /> 
