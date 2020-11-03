@@ -46,6 +46,13 @@ Then I took the difference between prediction and the true value to examine the 
 
 In this section, we explore feature importance at two bike path locations (Capital and Monroe).  The following figure shows how factors' coefficients change with the penalty term assigned in the Lasso regression model. We observe that the trend displays three remarkable differences regarding feature importance between these two locations. 
 
+
+
+<p float="left" align="middle">
+  <img src="/images/lasso_capital1.png" width="45%" />
+  <img src="/images/lasso_monroe1.png" width="45%" /> 
+</p>
+
 First of all, other than season and month factors, the year factor (2020) also has a large absolute coefficient at Monroe when we assign a smaller penalty to the model. Indeed, the year 2020 has double meanings in this context. The year 2020 not only represents a calendar year but also indicates the existence of covid-19 as a boolean type variable. On the contrary, we don't see any covid-related variables that have a profound impact on the model at the Capital.
 
 Moreover, when we increase the penalty term to 100, all the coefficients converge to zero at Monroe. However, max_temp and wind speed at the Capital is not affected by the penalty term at all, since these two variables display a nearly horizontal line throughout the plot. Their resilience against the penalty force indicates their outstanding contribution to the model at the Capital.
@@ -54,12 +61,14 @@ Last but not least, in the range between 10 to 40 of penalty at Monroe, we can s
 Combined with the earlier analysis of the Year 2020, we can conclude that covid-19 have a strong influence on the bike user's behavior at Monroe, while weather-related information such as temperature and windspeed dominates the model at the Capital, which makes covid-19 less significant in that case. 
 
 
+To confirm the aforementioned conclusion about the importance of weather information at Capital, we also check the heatmap with the correlation between predictors and the target variable.
+
 <p float="left" align="middle">
-  <img src="/images/lasso_capital1.png" width="45%" />
-  <img src="/images/lasso_monroe1.png" width="45%" /> 
+  <img src="/images/heatmap_capital.png" width="450" />
+  <img src="/images/heatmap_monroe.png" width="450" /> 
 </p>
 
-
+We observe that temp and dew tend to have a strong correlation (around 0.85) with Counts at Capital, while the correlation between them and Counts is around 0.45. These numbers substantiate the conclusion we made above that temp and windspeed are much more influential than other variables in the model of Capital. 
 
 
 
