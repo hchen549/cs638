@@ -66,6 +66,7 @@ To confirm the aforementioned conclusion about the importance of weather informa
 
 We observe that temp and dew tend to have a strong correlation (around 0.85) with Counts at Capital, while the correlation between them and Counts is around 0.45. These numbers substantiate the conclusion we made above that temp and windspeed are much more influential than other variables in the model of Capital. 
 
+
 > Week 11/09 (Haoming)
 
 <p float="left" align="middle">
@@ -77,7 +78,9 @@ We observe that temp and dew tend to have a strong correlation (around 0.85) wit
 </p>
 
 
-To interpret each principal components, examine the magnitude and direction of the coefficients for the original variables. The larger the absolute value of the coefficient, the more important the corresponding variable is in calculating the component.
+To interpret each principal components, we examine the magnitude and direction of the coefficients for the original variables. The larger the absolute value of the coefficient, the more important the corresponding variable is in calculating the component.
+
+The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Recreation scores. This suggests that these four criteria vary together. 
 
 ## 4. Modeling Bike Utilization
 
