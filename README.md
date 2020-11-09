@@ -73,7 +73,7 @@ We observe that temp and dew tend to have a strong correlation (around 0.85) wit
 </p>
 
 <p float="left" align="middle">
-  <img src="/images/PCA_Corr.png" width="60%" />
+  <img src="/images/PCA_Corr.png" width="30%" />
 </p>
 
 ## 4. Modeling Bike Utilization
