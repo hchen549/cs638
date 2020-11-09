@@ -66,8 +66,15 @@ To confirm the aforementioned conclusion about the importance of weather informa
 
 We observe that temp and dew tend to have a strong correlation (around 0.85) with Counts at Capital, while the correlation between them and Counts is around 0.45. These numbers substantiate the conclusion we made above that temp and windspeed are much more influential than other variables in the model of Capital. 
 
+> Week 11/09 (Haoming)
 
+<p float="left" align="middle">
+  <img src="/images/PCA_Variance.png" width="90%" />
+</p>
 
+<p float="left" align="middle">
+  <img src="/images/PCA_Corr.png" width="60%" />
+</p>
 
 ## 4. Modeling Bike Utilization
 
