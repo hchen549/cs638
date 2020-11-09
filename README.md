@@ -80,7 +80,7 @@ We observe that temp and dew tend to have a strong correlation (around 0.85) wit
 
 To interpret each principal components, we examine the magnitude and direction of the coefficients for the original variables. The larger the absolute value of the coefficient, the more important the corresponding variable is in calculating the component.
 
-The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Recreation scores. This suggests that these four criteria vary together. 
+The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Season summer. This suggests that these four criteria vary together. 
 
 ## 4. Modeling Bike Utilization
 
