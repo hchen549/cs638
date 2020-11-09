@@ -76,6 +76,9 @@ We observe that temp and dew tend to have a strong correlation (around 0.85) wit
   <img src="/images/PCA_Corr.png" width="30%" />
 </p>
 
+
+To interpret each principal components, examine the magnitude and direction of the coefficients for the original variables. The larger the absolute value of the coefficient, the more important the corresponding variable is in calculating the component.
+
 ## 4. Modeling Bike Utilization
 
 ### 4.1. Multiple Linear Regression
