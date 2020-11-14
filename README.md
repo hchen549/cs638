@@ -60,8 +60,8 @@ Combined with the earlier analysis of the Year 2020, we can conclude that covid-
 To confirm the aforementioned conclusion about the importance of weather information at Capital, we also check the heatmap with the correlation between predictors and the target variable.
 
 <p float="left" align="middle">
-  <img src="/images/heatmap_capital.png" width="450" />
-  <img src="/images/heatmap_monroe.png" width="450" /> 
+  <img src="/images/heatmap_capital.png" width="420" />
+  <img src="/images/heatmap_monroe.png" width="420" /> 
 </p>
 
 We observe that temp and dew tend to have a strong correlation (around 0.85) with Counts at Capital, while the correlation between them and Counts is around 0.45. These numbers substantiate the conclusion we made above that temp and windspeed are much more influential than other variables in the model of Capital. 
@@ -73,12 +73,17 @@ We observe that temp and dew tend to have a strong correlation (around 0.85) wit
   <img src="/images/PCA_Variance.png" width="90%" />
 </p>
 
+In our predictive model, we have around 60 variables for prediction and some of them are highly correlated, such as 7-day average cases, 14-day average cases. Those many factors may cause a problem of overfitting and also violate the assumption of independence between variables in the linear regression model.
+
+We select the first 10 principal components in the model since the rest of the principal components only make minor contributions to the explained variance. The first two principal components can explain around 14% of the variance. Inspired by that, we want to explore how the principal components are connected with the original factors in the following plot. 
+
+
 <p float="left" align="middle">
   <img src="/images/PCA_Corr.png" width="30%" />
 </p>
 
 
-To interpret each principal components, we examine the magnitude and direction of the coefficients for the original variables. The larger the absolute value of the coefficient, the more important the corresponding variable is in calculating the component.
+To interpret each principal component, we examine the magnitude and direction of the coefficients for the original variables. The larger the absolute value of the coefficient, the more important the corresponding variable is in calculating the component.
 
 The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Season summer. This suggests that these four criteria vary together. 
 
