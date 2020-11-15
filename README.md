@@ -144,7 +144,7 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
 
 
 <p float="left" align="middle">
-  <img src="/images/Model_comparison_cap.png" width="30%" />
+  <img src="/images/Model_comparison_cap.png" width="60%" />
 </p>
 ## 7. Predicting Bike Utilization in the Near Future
 
