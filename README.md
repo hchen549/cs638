@@ -142,6 +142,10 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
   <img src="/images/Ridge_learning_curve.PNG" width="45%" /> 
 </p>
 
+
+<p float="left" align="middle">
+  <img src="/images/Model_comparison_cap.png" width="30%" />
+</p>
 ## 7. Predicting Bike Utilization in the Near Future
 
 Having developed models to visualize bike utilization, we can use them to predict bike utilization in the near future. Due to the lack of weather forecasts for Madison in 2021, we assumed that the weather in 2021 will be similar to that in 2017. Both the multiple regression model and the polynomial ridge model were used to predict bike utilization in 3 different COVID-19 scenarios: steady decline, stagnation, and steady increase, shown in Figures [], [], and [], respectively.
