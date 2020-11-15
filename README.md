@@ -138,7 +138,7 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
 > Week 11/16 (Haoming)
 
 <p float="left" align="middle">
-  <img src="/images/RF_learning_curve.PNG" width="40%" />
+  <img src="/images/RF_learning_curve.PNG" width="42.5%" />
   <img src="/images/Ridge_learning_curve.PNG" width="45%" /> 
 </p>
 
