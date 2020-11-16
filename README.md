@@ -148,7 +148,7 @@ In this bar plot, we are trying to evaluate the performance of four different mo
   <img src="/images/Ridge_learning_curve.PNG" width="45%" /> 
 </p>
 
-We select a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. 
+We select a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. It can be see
 
 
 ## 7. Predicting Bike Utilization in the Near Future
