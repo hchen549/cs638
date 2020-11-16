@@ -138,14 +138,19 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
 > Week 11/16 (Haoming)
 
 <p float="left" align="middle">
+  <img src="/images/Model_comparison_cap.png" width="60%" />
+</p>
+
+In this bar plot, we are trying to evaluate the performance of four different models used for the bike counts prediction. Within each algorithm, including Lasso, Ridge, Random Forest (rf), Gradient Boosting (gbr), we first select the optimal set of hyperparameters and then use 12-fold cross-validation to assess the model performance on the holdout dataset in each iteration. The height of the bar represents the average of explained variance while the error bar represents the standard deviation of the explained variance for the 12-fold cross-validation. It can be seen that the tree-based methods, such as rf and gbr, have better performance compared to linear models. However, those tree-based model also suffer from high computation cost and lower interpretability.
+
+<p float="left" align="middle">
   <img src="/images/RF_learning_curve.PNG" width="43%" />
   <img src="/images/Ridge_learning_curve.PNG" width="45%" /> 
 </p>
 
+We select a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. 
 
-<p float="left" align="middle">
-  <img src="/images/Model_comparison_cap.png" width="60%" />
-</p>
+
 ## 7. Predicting Bike Utilization in the Near Future
 
 Having developed models to visualize bike utilization, we can use them to predict bike utilization in the near future. Due to the lack of weather forecasts for Madison in 2021, we assumed that the weather in 2021 will be similar to that in 2017. Both the multiple regression model and the polynomial ridge model were used to predict bike utilization in 3 different COVID-19 scenarios: steady decline, stagnation, and steady increase, shown in Figures [], [], and [], respectively.
