@@ -150,7 +150,7 @@ In this bar plot, we are trying to evaluate the performance of four different mo
 
 <p float="left" align="middle">
   <img src="/images/RF_learning_curve.PNG" width="32%" />
-  <img src="/images/Lasso_learning_curve.PNG" width="32%" /> 
+  <img src="/images/Lasso_learning_curve.PNG" width="34%" /> 
   <img src="/images/Lasso_poly_learning_curve.PNG" width="32%" /> 
 </p>
 
