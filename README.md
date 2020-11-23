@@ -141,6 +141,11 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
   <img src="/images/Model_comparison_cap.png" width="60%" />
 </p>
 
+
+<p float="left" align="middle">
+  <img src="/images/model_comp_cap_poly.PNG" width="60%" />
+</p>
+
 In this bar plot, we are trying to evaluate the performance of four different models used for the bike counts prediction. Within each algorithm, including Lasso, Ridge, Random Forest (rf), Gradient Boosting (gbr), we first select the optimal set of hyperparameters and then use 12-fold cross-validation to assess the model performance on the holdout dataset in each iteration. The height of the bar represents the average of explained variance while the error bar represents the standard deviation of the explained variance for the 12-fold cross-validation. It can be seen that the tree-based methods, such as rf and gbr, have better performance compared to linear models. However, those tree-based models also suffer from high computation costs and lower interpretability.
 
 <p float="left" align="middle">
