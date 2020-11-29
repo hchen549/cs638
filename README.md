@@ -87,34 +87,37 @@ To interpret each principal component, we examine the magnitude and direction of
 
 The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Season summer. This suggests that these four criteria vary together. 
 
-## 4. Modeling Bike Utilization
+## 4. Model Selection
 
-### 4.1. Multiple Linear Regression
+Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. 
+<p float="left" align="middle">
+  <img src="/images/Model_comparison_cap.png" width="60%" />
+</p>
 
-Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. Figure [] shows a comparison between the actual bike usage data and the predicted results in 2019 and 2020 using a multiple regression model. The model was trained using data from 2015 to 2017.
 
-<img src = "images/MR2019.png">
-<img src = "images/MR2020.png">
+<p float="left" align="middle">
+  <img src="/images/model_comp_cap_poly.PNG" width="60%" />
+</p>
+
+In this bar plot, we are trying to evaluate the performance of four different models used for the bike counts prediction. Within each algorithm, including Lasso, Ridge, Random Forest (rf), Gradient Boosting (gbr), we first select the optimal set of hyperparameters and then use 12-fold cross-validation to assess the model performance on the holdout dataset in each iteration. The height of the bar represents the average of explained variance while the error bar represents the standard deviation of the explained variance for the 12-fold cross-validation. It can be seen that the tree-based methods, such as rf and gbr, have better performance compared to linear models. However, those tree-based models also suffer from high computation costs and lower interpretability.
+
+<p float="left" align="middle">
+  <img src="/images/RF_learning_curve.PNG" width="32%" />
+  <img src="/images/Lasso_learning_curve.PNG" width="34%" /> 
+  <img src="/images/Lasso_poly_learning_curve.PNG" width="32%" /> 
+</p>
+
+We select a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. The red lines in both plots represent the explained variance score on the training set, while the green lines represent the explained variance score on the test set. Not surprisingly, the explained variance score on the training set is always higher than that of the test set, because the model will memorize some noise inherent in the data in the training process. One remarkable difference between the linear model and tree-based model is that there is a larger gap between these two lines in the random forest and a smaller gap in the Ridge. A larger gap indicates a problem of overfitting since random forest only achieve high explained variance on the training set, but a relatively low explained variance score on the test set. On the contrary, the linear model suffers a high bias problem. That's because even the explained variance score on the training set is around 0.82 and that score will be even lower on the test set. Another finding is that collecting more data might be helpful in the case of a tree-based model but that is not true for the linear model. The green line keeps increasing as the number of training examples increases in the random forest. However, the green line in the Ridge plot has already struck at the current point and is also bounded by the red line above. Therefore, we conclude the linear model almost reaches its full capacity, and collecting more data won't improve the performance of the linear model that much. But there is room for improvement for the tree-based model if more data is available. 
+
+## 5. Modeling Bike Utilization
+
+Having chosen a random forest model as our model of choice, we were able to test the model on the data we have tofigure out how it behaves and how it is affected by COVID-19 data. Figure [] shows a comparison between the actual bike usage data and the predicted results in 2019 and 2020. The model was trained using data from 2015 to 2017.
 
 This model could predict the data in 2019 with an 83% accuracy, while it could only achieve 73% accuracy when predicting data in 2020. This suggests that COVID-19 has had a relatively small yet not insignificant effect on bike utilization in Madison. As a result, COVID-19 data needed to be incorporated into the model training. Figure [] shows the performance of the model when predicting data in 2017 after being trained using data from 2018 to 2020.
 
-<img src = "images/Scatter2017.png" width = 600>
-
 Tested in this dataset, this model has an accuracy of 82%. For a perfect model, the slope would be 1.0, which indicates a perfect correlation. The 0.8 slope in figure [] indicates that the model has a low bias and regularly underestimates the number of bikes.
 
-### 4.2. Polynomial Ridge Regression
-
-Some nonlinear relationships between variables were identified, so we decided to change the model from a multiple linear regression to a polynomial ridge regression with a polynomial degree of 2. The 2nd degree polynomial transformation is done to allow the model to express the quadratic relationship between variables. We wanted to see how the model will perform when accounting for COVID-19 cases. Figure [] shows a comparison between the actual bike usage data and the predicted results in 2019 and 2020 using a polynomial ridge regression model. The model was trained using data from 2015 to 2017.
-
-<img src = "images/PR2019.png">
-<img src = "images/PR2020.png">
-
-This model performs better than the multiple regression model, yielding an accuracy of 88% in 2019 and 76% in 2020. Like the multiple regression model, this model also performs better when there are no COVID-19 cases. This further emphasizes that COVID-19's impact to bike usage cannot be ignored. Figure [] shows the performance of the model when predicting data in 2017 after being trained using data from 2018 to 2020.
-
-<img src = "images/Scatter2017b.png" width = 600>
-
-Tested in this dataset, this model has an accuracy of 86%. The 0.84 slope in figure [] indicates that the model is better at predicting than the multiple regression model, but it still has a low bias and regularly underestimates the number of bikes.
-## 5. The Impact of COVID-19
+## 6. The Impact of COVID-19
 
 Questions
 - Whether COVID19 has a notable impact on the bike usage level
@@ -134,27 +137,7 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
 
 <img src = "images/User_composition.png" width = 800>
 
-## 6 Model Diagnostics
-> Week 11/16 (Haoming)
-
-<p float="left" align="middle">
-  <img src="/images/Model_comparison_cap.png" width="60%" />
-</p>
-
-
-<p float="left" align="middle">
-  <img src="/images/model_comp_cap_poly.PNG" width="60%" />
-</p>
-
-In this bar plot, we are trying to evaluate the performance of four different models used for the bike counts prediction. Within each algorithm, including Lasso, Ridge, Random Forest (rf), Gradient Boosting (gbr), we first select the optimal set of hyperparameters and then use 12-fold cross-validation to assess the model performance on the holdout dataset in each iteration. The height of the bar represents the average of explained variance while the error bar represents the standard deviation of the explained variance for the 12-fold cross-validation. It can be seen that the tree-based methods, such as rf and gbr, have better performance compared to linear models. However, those tree-based models also suffer from high computation costs and lower interpretability.
-
-<p float="left" align="middle">
-  <img src="/images/RF_learning_curve.PNG" width="32%" />
-  <img src="/images/Lasso_learning_curve.PNG" width="34%" /> 
-  <img src="/images/Lasso_poly_learning_curve.PNG" width="32%" /> 
-</p>
-
-We select a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. The red lines in both plots represent the explained variance score on the training set, while the green lines represent the explained variance score on the test set. Not surprisingly, the explained variance score on the training set is always higher than that of the test set, because the model will memorize some noise inherent in the data in the training process. One remarkable difference between the linear model and tree-based model is that there is a larger gap between these two lines in the random forest and a smaller gap in the Ridge. A larger gap indicates a problem of overfitting since random forest only achieve high explained variance on the training set, but a relatively low explained variance score on the test set. On the contrary, the linear model suffers a high bias problem. That's because even the explained variance score on the training set is around 0.82 and that score will be even lower on the test set. Another finding is that collecting more data might be helpful in the case of a tree-based model but that is not true for the linear model. The green line keeps increasing as the number of training examples increases in the random forest. However, the green line in the Ridge plot has already struck at the current point and is also bounded by the red line above. Therefore, we conclude the linear model almost reaches its full capacity, and collecting more data won't improve the performance of the linear model that much. But there is room for improvement for the tree-based model if more data is available.  
+ 
 
 
 ## 7. Predicting Bike Utilization in the Near Future
@@ -162,28 +145,11 @@ We select a representative model from the tree-based model and linear model resp
 Having developed models to visualize bike utilization, we can use them to predict bike utilization in the near future. Due to the lack of weather forecasts for Madison in 2021, we assumed that the weather in 2021 will be similar to that in 2017. Both the multiple regression model and the polynomial ridge model were used to predict bike utilization in 3 different COVID-19 scenarios: steady decline, stagnation, and steady increase, shown in Figures [], [], and [], respectively.
 
 
-### Tree based Model
-> Week 10/19 (Haoming)
-
-We then tried a different approach to make the prediction and we will compare the performance of tree-based models against linear regression later. I only show the first three layers of the decision tree simply because the plot of a deeper tree cannot fit into the screen. It can be seen that the temp variable is used as the primary splitting criterion in the first layer and is also used multiple times in the following layer, which indicates the importance of temp in separating the target variable.  
-
-<img src = "images/tree.png" width = 800>
 
 
 
 
-Although the correlations are giving a good overview of the most important numeric variables and multicollinearity among those variables, I wanted to get an overview of the most important variables including the categorical variables.
-
-The feature importance is calculated by its total contribution in decreasing the weighted impurity. In the context of the regression problem, the impurity is measured by the Mean Square Error within a node. The result of the tree-based model is almost consistent with the result of multiple linear regression, where weather information plays a dominant role in making prediction and information involves covid-19 are less determinant in both models. 
-
-<img src = "images/feature_im_dt.png" width = 500>
-
-
-
-
-
-
-## Data sources
+## References
 
 The data used for this analysis are collected from public online sources.<br>
 
@@ -193,15 +159,4 @@ The data used for this analysis are collected from public online sources.<br>
 
 
 
-## To-do
-
-⋅⋅* Data
-1. Find the availability of other public transportations (bus), 
-2. Add variables that can describe people's attitude towards COVID-19
-3. Add government response to the COVID-19 (For example: Reopen plan and stay-at-home order)
-
-⋅⋅* Model
-1. Run Random Forest models with and without covid-related variables on two locations. As a result, there will be four models in total.
-2. Evaluate the performance of models within each location and examine the importance and contribution of covid-related factors to the accuracy of the tree-models
-3. Check whether the result from tree models are consistent with the regression models
 
