@@ -140,13 +140,11 @@ Captial has a larger gap between weekend and weekday during the daytime (shadowe
 Having developed models to visualize bike utilization, we can use them to predict bike utilization in the near future. Due to the lack of weather forecasts for Madison in 2021, we assumed that the weather in 2021 will be similar to that in 2017. Both the multiple regression model and the polynomial ridge model were used to predict bike utilization in 3 different COVID-19 scenarios: steady decline, stagnation, and steady increase, shown in Figures [], [], and [], respectively.
 
 
-
+## 8. Conclusions
 
 
 
 ## References
-
-The data used for this analysis are collected from public online sources.<br>
 
 - [Weather1](https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5)
 - [Weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
