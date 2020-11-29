@@ -38,8 +38,6 @@ Then I took the difference between prediction and the true value to examine the 
 
 <img src = "images/Simple_lr_diff.png">
 
-> Week 11/02 (Haoming)
-
 In this section, we explore feature importance at two bike path locations (Capital and Monroe).  The following figure shows how factors' coefficients change with the penalty term assigned in the Lasso regression model. We observe that the trend displays three remarkable differences regarding feature importance between these two locations. 
 
 
@@ -66,9 +64,6 @@ To confirm the aforementioned conclusion about the importance of weather informa
 
 We observe that temp and dew tend to have a strong correlation (around 0.85) with Counts at Capital, while the correlation between them and Counts is around 0.45. These numbers substantiate the conclusion we made above that temp and windspeed are much more influential than other variables in the model of Capital. 
 
-
-> Week 11/09 (Haoming)
-
 <p float="left" align="middle">
   <img src="/images/PCA_Variance.png" width="90%" />
 </p>
@@ -89,7 +84,7 @@ The first principal component is strongly correlated with four of the original v
 
 ## 4. Model Selection
 
-Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. 
+Having determined the factors that contribute to bicycle usage in Madison, a model can start to be developed. We considered various models: Lasso
 <p float="left" align="middle">
   <img src="/images/Model_comparison_cap.png" width="60%" />
 </p>
