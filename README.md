@@ -101,6 +101,11 @@ Having chosen a random forest model as our model of choice, we were able to test
 
 This model could predict the data in 2019 with an 83% accuracy, while it could only achieve 73% accuracy when predicting data in 2020. This suggests that COVID-19 has had a relatively small yet not insignificant effect on bike utilization in Madison. As a result, COVID-19 data needed to be incorporated into the model training. Figure [] shows the performance of the model when predicting data in 2017 after being trained using data from 2018 to 2020.
 
+<p float="left" align="middle">
+  <img src="/images/Actual_vs_predicted.PNG" width="90%" />
+</p>
+
+
 Tested in this dataset, this model has an accuracy of 82%. For a perfect model, the slope would be 1.0, which indicates a perfect correlation. The 0.8 slope in figure [] indicates that the model has a low bias and regularly underestimates the number of bikes.
 
 ## 6. The Impact of COVID-19
