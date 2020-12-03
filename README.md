@@ -13,7 +13,12 @@ In the end, we recommend that the City of Madison widen the bike paths in the ci
 
 ## 2. Historical Bike Traffic
 
-(TO DO - Display data from years before 2020. Use plots from our first presentation.)
+Figure 1 shows that there is a shift in bike traffic during the day before and after the COVID-19 pandemic. More people start their commute later during the pandemic than before. 
+
+<p float="left" align="middle">
+  <img src="/images/Historical1.png" width="600" /><br>
+  Figure 1
+</p>
 
 ## 3. Bike Utilization Factors
 
@@ -87,16 +92,16 @@ Figure 8 shows an evaluation of the performance of four different models used fo
 
 <p float="left" align="middle">
   <img src="/images/model_comp_cap_poly.PNG" width="60%" /><br>
-  Figure 7
+  Figure 8
 </p>
 
-We selected a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. The red lines in both Figure 8 represent the explained variance score on the training set, while the green lines represent the explained variance score on the test set. Not surprisingly, the explained variance score on the training set is always higher than that of the test set, because the model will memorize some noise inherent in the data in the training process. One remarkable difference between the linear model and tree-based model is that there is a larger gap between these two lines in the random forest and a smaller gap in the Ridge. A larger gap indicates a problem of overfitting since random forest only achieve high explained variance on the training set, but a relatively low explained variance score on the test set. On the contrary, the linear model suffers a high bias problem. That's because even the explained variance score on the training set is around 0.82 and that score will be even lower on the test set. Another finding is that collecting more data might be helpful in the case of a tree-based model but that is not true for the linear model. The green line keeps increasing as the number of training examples increases in the random forest. However, the green line in the Ridge plot has already struck at the current point and is also bounded by the red line above. Therefore, we conclude the linear model almost reaches its full capacity, and collecting more data won't improve the performance of the linear model that much. But there is room for improvement for the tree-based model if more data is available. 
+We selected a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. The red lines in both Figure 9 represent the explained variance score on the training set, while the green lines represent the explained variance score on the test set. Not surprisingly, the explained variance score on the training set is always higher than that of the test set, because the model will memorize some noise inherent in the data in the training process. One remarkable difference between the linear model and tree-based model is that there is a larger gap between these two lines in the random forest and a smaller gap in the Ridge. A larger gap indicates a problem of overfitting since random forest only achieve high explained variance on the training set, but a relatively low explained variance score on the test set. On the contrary, the linear model suffers a high bias problem. That's because even the explained variance score on the training set is around 0.82 and that score will be even lower on the test set. Another finding is that collecting more data might be helpful in the case of a tree-based model but that is not true for the linear model. The green line keeps increasing as the number of training examples increases in the random forest. However, the green line in the Ridge plot has already struck at the current point and is also bounded by the red line above. Therefore, we conclude the linear model almost reaches its full capacity, and collecting more data won't improve the performance of the linear model that much. But there is room for improvement for the tree-based model if more data is available. 
 
 <p float="left" align="middle">
   <img src="/images/RF_learning_curve.PNG" width="32%" />
   <img src="/images/Lasso_learning_curve.PNG" width="34%" /> 
   <img src="/images/Lasso_poly_learning_curve.PNG" width="32%" /> <br>
-  Figure 8
+  Figure 9
 </p>
 
 
@@ -106,37 +111,37 @@ We selected a representative model from the tree-based model and linear model re
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted.PNG" width="70%" /><br>
-  Figure 9
+  Figure 10
 </p>
 
 
-Figure 10 shows that the predicted values are slightly lower than the actual values. This means that the model has a slight low bias. 
+Figure 11 shows that the predicted values are slightly lower than the actual values. This means that the model has a slight low bias. 
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted2.PNG" width="70%" /><br>
-  Figure 10
+  Figure 11
 </p>
 
 ## 6. The Impact of COVID-19
 
-In Figures 11 and 12, we take the difference of bike user counts between 2020 and 2019. It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
+In Figures 12 and 13, we take the difference of bike user counts between 2020 and 2019. It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
 
 <p float="left" align="middle">
   <img src = "images/diff_in_counts_scatter.PNG" width = 800><br>
-  Figure 11
+  Figure 12
 </p>
 
 <p float="left" align="middle">
   <img src = "images/diff_in_counts_histogram.png" width = 800><br>
-  Figure 12
+  Figure 13
 </p>
 
 
-The user composition is one of the possible reasons that could explain the difference behind those two locations. Capital has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap, as shown in Figure 13. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
+The user composition is one of the possible reasons that could explain the difference behind those two locations. Capital has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap, as shown in Figure 14. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
 
 <p float="left" align="middle">
   <img src = "images/User_composition.png" width = 800><br>
-  Figure 13
+  Figure 14
 </p>
 
 ## 7. Predicting Bike Utilization in the Near Future
