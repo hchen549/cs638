@@ -102,43 +102,42 @@ We selected a representative model from the tree-based model and linear model re
 
 ## 5. Modeling Bike Utilization
 
-Having chosen a random forest model as our model of choice, we were able to test the model on the data we have tofigure out how it behaves and how it is affected by COVID-19 data. Figure [] shows a comparison between the actual bike usage data and the predicted results in 2019 and 2020. The model was trained using data from 2015 to 2017.
-
-This model could predict the data in 2019 with an 83% accuracy, while it could only achieve 73% accuracy when predicting data in 2020. This suggests that COVID-19 has had a relatively small yet not insignificant effect on bike utilization in Madison. As a result, COVID-19 data needed to be incorporated into the model training. Figure [] shows the performance of the model when predicting data in 2017 after being trained using data from 2018 to 2020.
+(Explain what you did for this plot.)
 
 <p float="left" align="middle">
-  <img src="/images/Actual_vs_predicted.PNG" width="70%" />
+  <img src="/images/Actual_vs_predicted.PNG" width="70%" /><br>
+  Figure 9
 </p>
 
 
-Tested in this dataset, this model has an accuracy of 82%. For a perfect model, the slope would be 1.0, which indicates a perfect correlation. The 0.8 slope in figure [] indicates that the model has a low bias and regularly underestimates the number of bikes.
+Figure 10 shows that the predicted values are slightly lower than the actual values. This means that the model has a slight low bias. 
 
 <p float="left" align="middle">
-  <img src="/images/Actual_vs_predicted2.PNG" width="70%" />
+  <img src="/images/Actual_vs_predicted2.PNG" width="70%" /><br>
+  Figure 10
 </p>
 
 ## 6. The Impact of COVID-19
 
-Questions
-- Whether COVID19 has a notable impact on the bike usage level
-- Whether COVID19 has a consistent impact on different bike paths 
-- What causes the COVID19 to show the disparate effect on different bike paths (Internal factors: User composition. External factors: Location of bike path and availability of other transportation)
+In Figures 11 and 12, we take the difference of bike user counts between 2020 and 2019. It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
+
+<p float="left" align="middle">
+  <img src = "images/diff_in_counts_scatter.PNG" width = 800><br>
+  Figure 11
+</p>
+
+<p float="left" align="middle">
+  <img src = "images/diff_in_counts_histogram.png" width = 800><br>
+  Figure 12
+</p>
 
 
-In the following scatter plots and histogram, we take the difference of bike user counts between 2020 and 2019. It can be seen that Captial was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
+The user composition is one of the possible reasons that could explain the difference behind those two locations. Capital has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap, as shown in Figure 13. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
 
-<img src = "images/diff_in_counts_scatter.PNG" width = 800>
-
-<img src = "images/diff_in_counts_histogram.png" width = 800>
-
-The user composition is one of the possible reasons that could explain the difference behind those two locations.
-Captial has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
-
-
-<img src = "images/User_composition.png" width = 800>
-
- 
-
+<p float="left" align="middle">
+  <img src = "images/User_composition.png" width = 800><br>
+  Figure 13
+</p>
 
 ## 7. Predicting Bike Utilization in the Near Future
 
