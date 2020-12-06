@@ -9,9 +9,9 @@ We created a Random Forest model to understand how COVID-19 impacted bicycle uti
 
 We used to model to forecast utilization of bike paths in early 2021. (Three scenarios were taken into consideration: stagnation, increase, and decrease in COVID-19 cases.) or (We assumed that the COVID-19 trend in early 2021 will be similar to that of the current trend in late 2020.)  We found that the 
 
-In the end, we recommend that the City of Madison widen the bike paths in the city to adapt to the increase in traffic. A wider path will lead to less bike traffic and riders can stay farther from each other. This also abides by physical distancing policies established because of the pandemic
+In the end, we recommend that the City of Madison widen the bike paths in the city to adapt to the increase in traffic. A wider path will lead to less bike traffic and riders can stay farther from each other. This also abides by physical distancing policies established because of the pandemic. WE CAN CHANGE THE RECOMMENDATION.
 
-## 2. Historical Bike Traffic
+## 2. Trends in Bike Traffic Before and During the COVID-19 Pandemic
 
 Figure 1 shows that there is a shift in bike traffic during the day before and after the COVID-19 pandemic. More people start their commute later during the pandemic than before. 
 
@@ -19,6 +19,27 @@ Figure 1 shows that there is a shift in bike traffic during the day before and a
   <img src="/images/Historical1.png" width="600" /><br>
   <b>Figure 1. </b> Average number of bikes throughout the day with and without COVID-19
 </p>
+
+There used to be two peaks throughout the day, but now there is only one. This means that bike traffic in Madison is concentrated around a certain time during the day. It seems that most people go out and ride their bikes at roughly the same time. The same trend can be seen when breaking up the data by season, shown in Figures 2 and 3.
+
+<p float="left" align="middle">
+  <img src="/images/Season Pre.png" width="600" /><br>
+  <b>Figure 2. </b> Average number of bikes throughout the day without COVID-19 grouped by season.
+  <img src="/images/Season Post.png" width="600" /> <br>
+  <b>Figure 3. </b> Average number of bikes throughout the day with COVID-19 grouped by season. Only data until June 2020 are available.
+</p>
+
+The peak at around 8 AM is gone but the peak at around 4 PM still exists and is likely bigger. The peak during spring is larger during the pandemic than before the pandemic. Since data from July 2020 onwards, which includes the peak of summer in 2020, are not currently available, it is likely that the peak in the summer during the pandemic is larger than before the pandemic.
+
+Most of the bike riders during the pandemic may have been doing so for leisure activities. Figure 4 and 5 show a much stronger correlation between bikers on the Capital Trail and pedestrians on State Street during the pandemic than before the pandemic. The number of pedestrians on State Street decreased and became much closer to the number of bikes. Given that most of riders are active at around 4 PM during the pandemic, they may also be pedestrians on State Street.
+
+<p float="left" align="middle">
+  <img src="/images/Ped pre.png" /><br>
+  <b>Figure 4. </b> Bike and pedestrian traffic before the COVID-19 Pandemic<br>
+  <img src="/images/Ped post.png" /> <br>
+  <b>Figure 5. </b> Bike and pedestrian traffic after the COVID-19 Pandemic
+</p>
+
 
 ## 3. Bike Utilization Factors
 
