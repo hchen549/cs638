@@ -60,7 +60,7 @@ After plotting the heatmap between numerical variables and the target variable (
   Figure 3
 </p>
 
-Then I took the difference between prediction and the true value to examine the distribution of errors, seen in Figure 4. It turns out that the error tends to have a smaller variance when the wind speed and gust have a larger value. It implies that the prediction will be more stable when the input value of wind speed and gust are large. The error of temp and dew are not evenly distributed around the horizontal line, especially when the temp and dew have a small value, which results from the failure of linear regression in these two cases. 
+Then we took the difference between prediction and the true value to examine the distribution of errors, seen in Figure 4. It turns out that the error tends to have a smaller variance when the wind speed and gust have a larger value. It implies that the prediction will be more stable when the input value of wind speed and gust are large. The error of temp and dew are not evenly distributed around the horizontal line, especially when the temp and dew have a small value, which results from the failure of linear regression in these two cases. 
 
 <p float="left" align="middle">
   <img src = "images/Simple_lr_diff.png"><br>
