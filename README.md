@@ -1,5 +1,5 @@
 
-
+# Analysis of The Effects of COVID-19 on Bike Traffic in Madison, Wisconsin
 
 ## 1. Introduction
 
@@ -17,7 +17,7 @@ Figure 1 shows that there is a shift in bike traffic during the day before and a
 
 <p float="left" align="middle">
   <img src="/images/Historical1.png" width="600" /><br>
-  Figure 1
+  <b>Figure 1. </b> Average number of bikes throughout the day with and without COVID-19
 </p>
 
 ## 3. Bike Utilization Factors
