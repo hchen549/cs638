@@ -56,8 +56,8 @@ We have around 50 factors after one-hot encoding and they can be split into nume
 As for the numerical variables, we focused on COVID-19 and weather variables, including rain/precipitation, snow, humidity, air pressure, temperature, and windspeed because weather is one of the major factor in deciding what mode of transportation to use and it is easy to measure. Figure 2 shows a heat map displaying the correlations between the variables with each other at the two locations.
 
 <p float="left" align="middle">
-  <img src="/images/heatmap_capital.png" width="40%" />
-  <img src="/images/heatmap_monroe.png" width="40%" /> <br>
+  <img src="/images/heatmap_capital.png" width="44%" />
+  <img src="/images/heatmap_monroe.png" width="44%" /> <br>
   Figure 2
 </p>
 
