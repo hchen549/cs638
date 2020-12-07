@@ -5,6 +5,13 @@
 
 The coronavirus disease-19 (COVID-19) pandemic radically changed the lives of many people, including those living in Madison, Wisconsin. In March 2020, Governor Tony Evers issued a stay-at-home order and prompted schools to move to online instruction [1]. As the vast majority of people staying home for most of the day, many public facilities such as public transportation and academic and office buildings experienced a change in their usage. As schools, offices, and many other places people regularly visited closed, fewer people needed to commute during the day and hence transportation may have become affected by the pandemic, including bike usage. People were advised to avoid using public transportation, such as buses. As a result, more people may change their transportation behaviors and become more inclined to use their own mode of transportation, such as their bicycles. **Two bike trails in Madison are the main objects for this study.** *The main purpose of this report is to investigate how does the COVID-19 affect people's usage level of bikes at different locations.* 
 
+<p float="left" align="middle">
+  <img src="/images/Capital_sensor.PNG" width="45%" />
+  <img src="/images/Monroe_sensor.PNG" width="45%" /> 
+  
+  Figure 1
+</p>
+
 We trained **Random Forest models** to understand how COVID-19 has impacted bicycle utilization in Madison and predict bike utilization in the near future. The prediction result can help the City of Madison better manage public resourses in response to the change in the level of bike traffic. The model was trained on data from 2015 to 2020. We identified several factors that contributed to bike utilization more than the COVID-19 pandemic. These factors include the air temperature, humidity, rain, snow, seasonal variation. Although the weather has the largest effect on bike utilization, we found a slightly positive correlation between confirmed COVID-19 cases and the level of bike traffic.
 
 We used our model to forecast utilization of bike paths in early 2021. (Three scenarios were taken into consideration: stagnation, increase, and decrease in COVID-19 cases or We assumed that the COVID-19 trend in early 2021 will be similar to that of the current trend in late 2020.)  
