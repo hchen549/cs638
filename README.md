@@ -80,6 +80,9 @@ After plotting the heatmap between numerical variables and the target variable (
 
 ## 4 Feature importance and the Impact of COVID-19
 
+In this section, we employed two methods to understand the impact of COVID-19. The first method is the lasso model where we examined how the coefficients of COVID-19 related variables change in response to the change in the magnitude of the penalty term. In the second method, we took a more straightforward strategy where we conducted a year-to-year comparison to display how the bike usage counts change in the Year 2020 compared to the previous year.  
+
+### 4.1 Method 1 (Lasso Model)
 We explored feature importance at two bike path locations (Capital and Monroe). Figure 5 shows how factors' coefficients change with the penalty term assigned in the Lasso regression model. We observe that the trend displays three remarkable differences regarding feature importance between these two locations. 
 
 <p float="left" align="middle">
@@ -95,6 +98,8 @@ Moreover, when we increase the penalty term to 100, all the coefficients converg
 Last but not least, in the range between 10 to 40 of penalty at Monroe, we can see the green line which represents the positive rate remains an important factor in the model.
 Combined with the earlier analysis of the Year 2020, we can conclude that covid-19 have a strong influence on the bike user's behavior at Monroe, while weather-related information such as temperature and windspeed dominates the model at the Capital, which makes covid-19 less significant in that case. 
 
+### 4.2 Method 2 (Year-to-year comparison)
+
 In Figures 12 and 13, we take the difference of bike user counts between 2020 and 2019. It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
 
 <p float="left" align="middle">
@@ -107,7 +112,7 @@ In Figures 12 and 13, we take the difference of bike user counts between 2020 an
   Figure 13
 </p>
 
-
+### 4.3 Reasons for the 
 The user composition is one of the possible reasons that could explain the difference behind those two locations. Capital has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap, as shown in Figure 14. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
 
 <p float="left" align="middle">
@@ -140,14 +145,12 @@ The first principal component is strongly correlated with four of the original v
 Figure 8 shows an evaluation of the performance of four different models used for the bike counts prediction. Within each algorithm, including Lasso, Ridge, Random Forest (rf), Gradient Boosting (gbr), we first select the optimal set of hyperparameters and then use 12-fold cross-validation to assess the model performance on the holdout dataset in each iteration. The height of the bar represents the average of explained variance while the error bar represents the standard deviation of the explained variance for the 12-fold cross-validation. It can be seen that the tree-based methods, such as rf and gbr, have better performance compared to linear models. However, those tree-based models also suffer from high computation costs and lower interpretability.
 
 <p float="left" align="middle">
-  <img src="/images/Model_comparison_cap.png" width="60%" />
-</p>
-
-
-<p float="left" align="middle">
-  <img src="/images/model_comp_cap_poly.PNG" width="60%" /><br>
+  <img src="/images/Model_comparison_cap.png" width="60%" /><br>
   Figure 8
 </p>
+
+
+
 
 We selected a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. The red lines in both Figure 9 represent the explained variance score on the training set, while the green lines represent the explained variance score on the test set. Not surprisingly, the explained variance score on the training set is always higher than that of the test set, because the model will memorize some noise inherent in the data in the training process. One remarkable difference between the linear model and tree-based model is that there is a larger gap between these two lines in the random forest and a smaller gap in the Ridge. A larger gap indicates a problem of overfitting since random forest only achieve high explained variance on the training set, but a relatively low explained variance score on the test set. On the contrary, the linear model suffers a high bias problem. That's because even the explained variance score on the training set is around 0.82 and that score will be even lower on the test set. Another finding is that collecting more data might be helpful in the case of a tree-based model but that is not true for the linear model. The green line keeps increasing as the number of training examples increases in the random forest. However, the green line in the Ridge plot has already struck at the current point and is also bounded by the red line above. Therefore, we conclude the linear model almost reaches its full capacity, and collecting more data won't improve the performance of the linear model that much. But there is room for improvement for the tree-based model if more data is available. 
 
