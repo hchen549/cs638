@@ -76,7 +76,7 @@ After plotting the heatmap between numerical variables and the target variable (
 </p>
 
 
-Both correlation heatmap and simple linear regression plots suggest that temp and dew have a  remarkable impact on the level of bike usage at Capital, while such dominant factors don't exist at Monroe. We should keep in mind that the existence of such impactful factors at Captial may overshadow other predictors, such as COVID-19 related variables. Therefore, the strong impact of temperature and dew at Captial might be the driving force of the difference in the impact of COVID-19 between two bike paths.
+Both correlation heatmap and simple linear regression plots suggest that temp and dew have a  remarkable impact on the level of bike usage at Capital, while such dominant factors don't exist at Monroe. We should keep in mind that the existence of such impactful factors at Captial may overshadow other predictors, such as COVID-19 related variables. Therefore, the strong impact of temperature and dew at Captial might be the driving force of the difference in the impact of COVID-19 between two bike paths. We will go back to this point again in **section 4.1**
 
 
 ### 3.2 Categorical Variables[to-do]
@@ -102,7 +102,9 @@ First of all, other than season and month factors, the year factor (2020) also h
 Moreover, when we increase the penalty term to 100, all the coefficients converge to zero at Monroe, shown in Figure 6. However, max_temp and wind speed at the Capital is not affected by the penalty term at all, since these two variables display a nearly horizontal line throughout the plot. Their resilience against the penalty force indicates their outstanding contribution to the model at the Capital.
 
 Last but not least, in the range between 10 to 40 of penalty at Monroe, we can see the green line which represents the positive rate remains an important factor in the model.
-Combined with the earlier analysis of the Year 2020, we can conclude that covid-19 have a strong influence on the bike user's behavior at Monroe, while weather-related information such as temperature and windspeed dominates the model at the Capital, which makes covid-19 less significant in that case. 
+Combined with the earlier analysis of the Year 2020, we can conclude that covid-19 have a strong influence on the bike user's behavior at Monroe, while weather-related information such as temperature and windspeed dominates the model at the Capital, which makes COVID-19 less significant in that case. 
+
+Continued from the analysis in **section 3.1**, the lasso model also demonstrates that there exist influential factors at Capital but we couldn't find such at Monroe. These influential factors will overshadow other factors in the model and make them seem less significant. 
 
 ### 4.2 Method 2 (Year-to-year comparison)
 
