@@ -100,8 +100,8 @@ Combined with the earlier analysis of the Year 2020, we can conclude that covid-
 
 ### 4.2 Method 2 (Year-to-year comparison)
 
-In Figures 12 and 13, we take the difference of bike user counts between 2020 and 2019. It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
-
+In Figures 12 and 13, we take the difference in bike user counts between 2020 and 2019. It should be noted that the difference is aligned by day of the week when computing the difference to avoid taking the difference between a weekday and a weekend. The number on the upper left and lower left of each subplot represents the proportion of the positive and negative difference, respectively.  It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street. While the majority of points are evenly distributed around the horizontal line, there is an exception which is highlighted in yellow in the middle of both plots. It is interesting to see that we can only observe a negative difference in both locations for this extended period. This observation encourages us to discover some special events that might occur within these two weeks which could explain this exception and potentially become a great predictor of the level of bike traffic.
+ 
 <p float="left" align="middle">
   <img src = "images/diff_in_counts_scatter.PNG" width = 800><br>
   Figure 12
