@@ -7,8 +7,11 @@ The coronavirus disease-19 (COVID-19) pandemic radically changed the lives of ma
 
 <p float="left" align="middle">
   <img src="/images/Capital_sensor.PNG" width="45%" />
-  <img src="/images/Monroe_sensor.PNG" width="43.5%" /><br>
+  <figcaption>Optional title</figcaption>
+  <img src="/images/Monroe_sensor.PNG" width="43.5%" />
+  <figcaption>Optional title</figcaption><br>
   <b>Figure 1. </b> 
+  
 </p>
 
 We trained **Random Forest models** to understand how COVID-19 has impacted bicycle utilization in Madison and predict bike utilization in the near future. The prediction result can help the City of Madison better manage public resourses in response to the change in the level of bike traffic. The model was trained on data from 2015 to 2020. We identified several factors that contributed to bike utilization more than the COVID-19 pandemic. These factors include the air temperature, humidity, rain, snow, seasonal variation. Although the weather has the largest effect on bike utilization, we found a slightly positive correlation between confirmed COVID-19 cases and the level of bike traffic.
