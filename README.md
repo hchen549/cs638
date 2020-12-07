@@ -116,7 +116,7 @@ In Figures 12 and 13, we take the difference in bike user counts between 2020 an
 </p>
 
 <p float="left" align="middle">
-  <img src = "images/diff_in_counts_histogram.png" width = 800><br>
+  <img src = "images/CDF of diff.png" width = 800><br>
   Figure 13
 </p>
 
