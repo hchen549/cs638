@@ -63,7 +63,7 @@ As for the numerical variables, we focused on COVID-19 and weather variables, in
 
 We observe that temp and dew tend to have a strong correlation (around 0.85) with Counts at Capital, while the correlation between them and Counts is around 0.45. These numbers substantiate the conclusion we made above that temp and windspeed are much more influential than other variables in the model of Capital. 
 
-After plotting the heatmap between numerical variables and the target variable (Count), we started to build simple linear regression to check if there is a linear relationship between each numerical variable and Count, shown in Figure 3. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow a linear model, but have some outliers we may want to look into. For instance, there are multiple days with less than 20 new cases but have suspiciously high user counts, which is around 6000. We can see similar behavior in temp and dew both follow more of a quadratic fit. 
+After plotting the heatmap between numerical variables and the target variable (Count), we started to build simple linear regression to check if there is a linear relationship between each numerical variable and Count, shown in Figure 3. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow closely with a linear model while **temp and dew both follow more of a quadratic fit**. 
 
 <p float="left" align="middle">
   <img src = "images/Simple_lr_num.png"><br>
