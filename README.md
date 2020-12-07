@@ -78,6 +78,8 @@ After plotting the heatmap between numerical variables and the target variable (
 
 
 
+## 4 Feature importance and the Impact of COVID-19
+
 We explored feature importance at two bike path locations (Capital and Monroe). Figure 5 shows how factors' coefficients change with the penalty term assigned in the Lasso regression model. We observe that the trend displays three remarkable differences regarding feature importance between these two locations. 
 
 <p float="left" align="middle">
@@ -93,13 +95,33 @@ Moreover, when we increase the penalty term to 100, all the coefficients converg
 Last but not least, in the range between 10 to 40 of penalty at Monroe, we can see the green line which represents the positive rate remains an important factor in the model.
 Combined with the earlier analysis of the Year 2020, we can conclude that covid-19 have a strong influence on the bike user's behavior at Monroe, while weather-related information such as temperature and windspeed dominates the model at the Capital, which makes covid-19 less significant in that case. 
 
+In Figures 12 and 13, we take the difference of bike user counts between 2020 and 2019. It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
+
+<p float="left" align="middle">
+  <img src = "images/diff_in_counts_scatter.PNG" width = 800><br>
+  Figure 12
+</p>
+
+<p float="left" align="middle">
+  <img src = "images/diff_in_counts_histogram.png" width = 800><br>
+  Figure 13
+</p>
+
+
+The user composition is one of the possible reasons that could explain the difference behind those two locations. Capital has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap, as shown in Figure 14. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
+
+<p float="left" align="middle">
+  <img src = "images/User_composition.png" width = 800><br>
+  Figure 14
+</p>
+
 
 <p float="left" align="middle">
   <img src="/images/PCA_Variance.png" width="90%" /><br>
   Figure 6
 </p>
 
-In our predictive model, we have around 60 variables for prediction and some of them are highly correlated, such as 7-day average cases, 14-day average cases. Those many factors may cause a problem of overfitting and also violate the assumption of independence between variables in the linear regression model.
+In our predictive model, we have around 50 variables for prediction and some of them are highly correlated, such as 7-day average cases, 14-day average cases. Those many factors may cause a problem of overfitting and also violate the assumption of independence between variables in the linear regression model.
 
 We select the first 10 principal components in the model since the rest of the principal components only make minor contributions to the explained variance. The first two principal components can explain around 14% of the variance. Inspired by that, we want to explore how the principal components are connected with the original factors in Figure 7. 
 
@@ -113,7 +135,7 @@ To interpret each principal component, we examine the magnitude and direction of
 
 The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Season summer. This suggests that these four criteria vary together. 
 
-## 4. Model Selection
+## 5. Model Selection
 
 Figure 8 shows an evaluation of the performance of four different models used for the bike counts prediction. Within each algorithm, including Lasso, Ridge, Random Forest (rf), Gradient Boosting (gbr), we first select the optimal set of hyperparameters and then use 12-fold cross-validation to assess the model performance on the holdout dataset in each iteration. The height of the bar represents the average of explained variance while the error bar represents the standard deviation of the explained variance for the 12-fold cross-validation. It can be seen that the tree-based methods, such as rf and gbr, have better performance compared to linear models. However, those tree-based models also suffer from high computation costs and lower interpretability.
 
@@ -154,27 +176,6 @@ Figure 11 shows that the predicted values are slightly lower than the actual val
   Figure 11
 </p>
 
-## 6. The Impact of COVID-19
-
-In Figures 12 and 13, we take the difference of bike user counts between 2020 and 2019. It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street.
-
-<p float="left" align="middle">
-  <img src = "images/diff_in_counts_scatter.PNG" width = 800><br>
-  Figure 12
-</p>
-
-<p float="left" align="middle">
-  <img src = "images/diff_in_counts_histogram.png" width = 800><br>
-  Figure 13
-</p>
-
-
-The user composition is one of the possible reasons that could explain the difference behind those two locations. Capital has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap, as shown in Figure 14. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
-
-<p float="left" align="middle">
-  <img src = "images/User_composition.png" width = 800><br>
-  Figure 14
-</p>
 
 ## 7. Predicting Bike Utilization in the Near Future
 
