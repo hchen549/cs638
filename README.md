@@ -49,7 +49,11 @@ Most of the bike riders during the pandemic may have been doing so for leisure a
 
 ## 3. Bike Utilization Factors
 
-This project focused on COVID-19 and weather variables, namely rain/precipitation, snow, humidity, air pressure, temperature, and windspeed because weather is one of the major factor in deciding what mode of transportation to use and it is easy to measure. Figure 2 shows a heat map displaying the correlations between the variables with each other at the two locations.
+We have around 50 factors after one-hot encoding and they can be split into numerical variables and categorical variables. Correlation analysis and simple linear regression will be conducted on the numerical variables to examine their relationship with the bike usage level. 
+
+### 3.1 Numerical Variables
+
+As for the numerical variables, we focused on COVID-19 and weather variables, including rain/precipitation, snow, humidity, air pressure, temperature, and windspeed because weather is one of the major factor in deciding what mode of transportation to use and it is easy to measure. Figure 2 shows a heat map displaying the correlations between the variables with each other at the two locations.
 
 <p float="left" align="middle">
   <img src="/images/heatmap_capital.png" width="800" />
@@ -72,6 +76,12 @@ Then we took the difference between prediction and the true value to examine the
   <img src = "images/Simple_lr_diff.png"><br>
   Figure 4
 </p>
+
+
+### 3.2 Categorical variables[to-do]
+
+
+
 
 We explored feature importance at two bike path locations (Capital and Monroe). Figure 5 shows how factors' coefficients change with the penalty term assigned in the Lasso regression model. We observe that the trend displays three remarkable differences regarding feature importance between these two locations. 
 
