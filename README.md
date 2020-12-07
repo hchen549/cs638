@@ -129,24 +129,7 @@ The user composition is one of the possible reasons that could explain the diffe
 </p>
 
 
-<p float="left" align="middle">
-  <img src="/images/PCA_Variance.png" width="90%" /><br>
-  Figure 6
-</p>
 
-In our predictive model, we have around 50 variables for prediction and some of them are highly correlated, such as 7-day average cases, 14-day average cases. Those many factors may cause a problem of overfitting and also violate the assumption of independence between variables in the linear regression model.
-
-We select the first 10 principal components in the model since the rest of the principal components only make minor contributions to the explained variance. The first two principal components can explain around 14% of the variance. Inspired by that, we want to explore how the principal components are connected with the original factors in Figure 7. 
-
-
-<p float="left" align="middle">
-  <img src="/images/PCA_Corr.png" width="30%" /><br>
-  Figure 7
-</p>
-
-To interpret each principal component, we examine the magnitude and direction of the coefficients for the original variables. The larger the absolute value of the coefficient, the more important the corresponding variable is in calculating the component.
-
-The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Season summer. This suggests that these four criteria vary together. 
 
 ## 5. Model Selection
 
@@ -196,6 +179,26 @@ Having developed models to visualize bike utilization, we can use them to predic
 ## 8. Conclusions
 
 
+
+## Appendix
+<p float="left" align="middle">
+  <img src="/images/PCA_Variance.png" width="90%" /><br>
+  Figure 6
+</p>
+
+In our predictive model, we have around 50 variables for prediction and some of them are highly correlated, such as 7-day average cases, 14-day average cases. Those many factors may cause a problem of overfitting and also violate the assumption of independence between variables in the linear regression model.
+
+We select the first 10 principal components in the model since the rest of the principal components only make minor contributions to the explained variance. The first two principal components can explain around 14% of the variance. Inspired by that, we want to explore how the principal components are connected with the original factors in Figure 7. 
+
+
+<p float="left" align="middle">
+  <img src="/images/PCA_Corr.png" width="30%" /><br>
+  Figure 7
+</p>
+
+To interpret each principal component, we examine the magnitude and direction of the coefficients for the original variables. The larger the absolute value of the coefficient, the more important the corresponding variable is in calculating the component.
+
+The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Season summer. This suggests that these four criteria vary together. 
 
 ## References
 
