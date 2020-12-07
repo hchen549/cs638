@@ -7,7 +7,7 @@ The coronavirus disease-19 (COVID-19) pandemic radically changed the lives of ma
 
 <p float="left" align="middle">
   <img src="/images/Capital_sensor.PNG" width="35%" title="Optional title"/>
-  <img src="/images/Monroe_sensor.PNG" width="33.5%" title="Optional title" /><br>
+  <img src="/images/Monroe_sensor.PNG" width="33.9%" title="Optional title" /><br>
   <b>Figure 1. </b> 
   
 </p>
