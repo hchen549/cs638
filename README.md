@@ -76,9 +76,10 @@ After plotting the heatmap between numerical variables and the target variable (
 </p>
 
 
+Both correlation heatmap and simple linear regression plots suggest that temp and dew have a  remarkable impact on the level of bike usage at Capital, while such dominant factors don't exist at Monroe. We should keep in mind that the existence of such impactful factors at Captial may overshadow other predictors, such as COVID-19 related variables. Therefore, the strong impact of temperature and dew at Captial might be the driving force of the difference in the impact of COVID-19 between two bike paths.
 
 
-### 3.2 Categorical variables[to-do]
+### 3.2 Categorical Variables[to-do]
 
 
 
