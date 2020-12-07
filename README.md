@@ -6,8 +6,8 @@
 The coronavirus disease-19 (COVID-19) pandemic radically changed the lives of many people, including those living in Madison, Wisconsin. In March 2020, Governor Tony Evers issued a stay-at-home order and prompted schools to move to online instruction [1]. As the vast majority of people staying home for most of the day, many public facilities such as public transportation and academic and office buildings experienced a change in their usage. As schools, offices, and many other places people regularly visited closed, fewer people needed to commute during the day and hence transportation may have become affected by the pandemic, including bike usage. People were advised to avoid using public transportation, such as buses. As a result, more people may change their transportation behaviors and become more inclined to use their own mode of transportation, such as their bicycles. **Two bike trails in Madison are the main objects for this study.** *The main purpose of this report is to investigate how does the COVID-19 affect people's usage level of bikes at different locations.* 
 
 <p float="left" align="middle">
-  <img src="/images/Capital_sensor.PNG" width="45%" title="Optional title"/>
-  <img src="/images/Monroe_sensor.PNG" width="43.5%" title="Optional title" />
+  <img src="/images/Capital_sensor.PNG" width="35%" title="Optional title"/>
+  <img src="/images/Monroe_sensor.PNG" width="33.5%" title="Optional title" /><br>
   <b>Figure 1. </b> 
   
 </p>
