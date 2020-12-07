@@ -66,8 +66,13 @@ We observe that temp and dew tend to have a strong correlation (around 0.85) wit
 After plotting the heatmap between numerical variables and the target variable (Count), we started to build simple linear regression to check if there is a linear relationship between each numerical variable and Count, shown in Figure 3. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow closely with a linear model while **temp and dew both follow more of a quadratic fit**. 
 
 <p float="left" align="middle">
-  <img src = "images/Simple_lr_num.png"><br>
+  <img src = "images/Simple_lr_num_at_capital.png"><br>
   Figure 3
+</p>
+
+<p float="left" align="middle">
+  <img src = "images/Simple_lr_num_at_monroe.png"><br>
+  Figure 4
 </p>
 
 
