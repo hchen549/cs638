@@ -163,7 +163,7 @@ We trained the Random Forest model on data from 2015 to 2020 and testes it on th
   Figure 10
 </p>
 
-The model seems to have a slight low bias. Figure 11 shows that the predicted values are slightly lower than the actual values. This will be important to keep in mind when interpreting the forecasts made using the model. 
+The model seems to have a slight low bias. Figure 11 shows that the predicted values are slightly lower than the actual values, represented by the slope, which is less than 1. This will be important to keep in mind when interpreting the forecasts made using the model as the results of the model will likely be lower than what they will actually be. 
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted2.PNG" width="70%" /><br>
