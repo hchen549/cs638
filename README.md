@@ -154,28 +154,41 @@ We selected a representative model from the tree-based model and linear model re
 </p>
 
 
-## 5. Modeling Bike Utilization
+## 6. Model Performance
 
-(Explain what you did for this plot.)
+We trained the Random Forest model on data from 2015 to 2020 and testes it on the same dataset. We found that the model is fairly accurate as it is able to learn the trends of the original dataset quite well. Figure .... shows the comparison between the original bike data and the predicted values from the model.
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted.PNG" width="70%" /><br>
   Figure 10
 </p>
 
-
-Figure 11 shows that the predicted values are slightly lower than the actual values. This means that the model has a slight low bias. 
+The model seems to have a slight low bias. Figure 11 shows that the predicted values are slightly lower than the actual values. This will be important to keep in mind when interpreting the forecasts made using the model. 
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted2.PNG" width="70%" /><br>
   Figure 11
 </p>
 
+Looking at the importance of each factor used in the model, we found that COVID-19 cases is only slightly important. Figure ... shows the importance of each variable on both bike paths. 
+
+<p float="left" align="middle">
+  <img src="/images/Factors Capital.png" width="40%" />
+  <img src="/images/Factors Southwest.png" width="40%" /><br>
+  <b>Figure 2. </b> Importance of each variable on Capital Trail (left) and Monroe (right).
+</p>
+
+It seems that COVID-19 seems to be a bigger factor on Monroe than on Capital Trail. It only accounts for 0.22% of the variance in the model results on Capital Trail, while it accounts for 0.39% of the variance in the model results on Monroe.
 
 ## 7. Predicting Bike Utilization in the Near Future
 
-Having developed models to visualize bike utilization, we can use them to predict bike utilization in the near future. Due to the lack of weather forecasts for Madison in 2021, we assumed that the weather in 2021 will be similar to that in 2017. Both the multiple regression model and the polynomial ridge model were used to predict bike utilization in 3 different COVID-19 scenarios: steady decline, stagnation, and steady increase, shown in Figures [], [], and [], respectively.
+Having developed models to visualize bike utilization, we can use them to predict bike utilization in 2021. Since weather forecasts for 2021 are not available for this analysis, we estimated the weather in 2021 to be the average over 2015 to 2020. Figure ... shows the daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on both bike paths.
 
+<p float="left" align="middle">
+  <img src="/images/Pred Capital.png"/>
+  <img src="/images/Pred Southwest.png"/><br>
+  <b>Figure 2. </b> Daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on Capital Trail (top) and Monroe (bottom).
+</p>
 
 ## 8. Conclusions
 
