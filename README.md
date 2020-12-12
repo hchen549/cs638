@@ -180,7 +180,7 @@ Looking at the importance of each factor used in the model, we found that COVID-
 
 It seems that COVID-19 seems to be a bigger factor on Monroe than on Capital Trail. It only accounts for 0.22% of the variance in the model results on Capital Trail, while it accounts for 0.39% of the variance in the model results on Monroe.
 
-## 7. Predicting Bike Utilization in the Near Future
+## 7. Predicting Daily Bike Ridership in 2021
 
 Having developed models to visualize bike utilization, we can use them to predict daily bike utilization in 2021. Since weather forecasts for 2021 are not available for this analysis, we estimated the weather in 2021 to be the average over 2015 to 2020. Figure ... shows the daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on both bike paths.
 
