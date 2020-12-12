@@ -182,14 +182,15 @@ It seems that COVID-19 seems to be a bigger factor on Monroe than on Capital Tra
 
 ## 7. Predicting Bike Utilization in the Near Future
 
-Having developed models to visualize bike utilization, we can use them to predict bike utilization in 2021. Since weather forecasts for 2021 are not available for this analysis, we estimated the weather in 2021 to be the average over 2015 to 2020. Figure ... shows the daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on both bike paths.
+Having developed models to visualize bike utilization, we can use them to predict daily bike utilization in 2021. Since weather forecasts for 2021 are not available for this analysis, we estimated the weather in 2021 to be the average over 2015 to 2020. Figure ... shows the daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on both bike paths.
 
 <p float="left" align="middle">
-  <img src="/images/Pred Capital.png"/>
-  <img src="/images/Pred Southwest.png"/><br>
+  <img src="/images/Pred Capital.png"width="70%"/>
+  <img src="/images/Pred Southwest.png"width="70%"/><br>
   <b>Figure 2. </b> Daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on Capital Trail (top) and Monroe (bottom).
 </p>
 
+The discrepancies between the predicted number of bikes with and without COVID-19 cases in Figure ... align with the finding that COVID-19 has a relatively small and positive effect on bike traffic on Capital Trail and a slightly larger but negative effect on bike traffic on Monroe. However, the discrepancies are relatively small and therefore can be considered almost negligible.
 ## 8. Conclusions
 
 
