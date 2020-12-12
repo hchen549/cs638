@@ -21,18 +21,17 @@ We used our model to forecast utilization of bike paths in early 2021. (Three sc
 Figure 2 shows that there is a shift in bike traffic during the day before and after the COVID-19 pandemic. More people start their commute later during the pandemic than before. 
 
 <p float="left" align="middle">
-  <img src="/images/Historical1.png" width="35%" />
-  <img src="/images/Historical2.png" width="35%" /><br>
+  <img src="/images/Historical1.png" width="40%" />
+  <img src="/images/Historical2.png" width="40%" /><br>
   <b>Figure 2. </b> Hourly average number of bikes throughout the day with and without COVID-19 on Capital Trail (left) and Monroe (right).
 </p>
 
-There used to be two peaks throughout the day, but now there is only one. This means that bike traffic in Madison is concentrated around a certain time during the day. It seems that most people go out and ride their bikes at roughly the same time. The same trend can be seen when breaking up the data by season, shown in Figures 2 and 3.
+There used to be two peaks throughout the day, but now there is only one. This means that bike traffic in Madison is concentrated around a certain time during the day. It seems that most people go out and ride their bikes at roughly the same time. The same trend can be seen when breaking up the data by season, shown in Figure 3.
 
 <p float="left" align="middle">
-  <img src="/images/Season Pre.png" width="600" /><br>
-  <b>Figure 2. </b> Average number of bikes throughout the day without COVID-19 grouped by season.
-  <img src="/images/Season Post.png" width="600" /> <br>
-  <b>Figure 3. </b> Average number of bikes throughout the day with COVID-19 grouped by season. Only data until June 2020 are available.
+  <img src="/images/Season Capital.png" width="40%" />
+  <img src="/images/Season Southwest.png" width="40%" /> <br>
+  <b>Figure 3. </b> Hourly average number of bikes throughout the day with COVID-19 grouped by season before and after the COVID-19 pandemic started on Capital Trail (left) and Monroe (right). Only data until June 2020 are available.
 </p>
 
 The peak at around 8 AM is gone but the peak at around 4 PM still exists and is likely bigger. The peak during spring is larger during the pandemic than before the pandemic. Since data from July 2020 onwards, which includes the peak of summer in 2020, are not currently available, it is likely that the peak in the summer during the pandemic is larger than before the pandemic.
