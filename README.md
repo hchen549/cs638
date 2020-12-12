@@ -199,6 +199,14 @@ Our research found that COVID-19 has a minuscule impact on daily bike ridership 
 Future studies should look more into into the relationship between bike traffic on Capital Trail and pedestrians on State Street. Our analysis has only been able to speculate that riders on Capital Trail may also be pedestrians on State Street. We found that the correlation between bike traffic on Capital Trail and pedestrians on State Street is much stronger after the pandemic started than before. Understanding how these two relate to each other will provide more insight, such as the destinations of bikers, for the City of Madison.
 
 
+## 9. References
+
+1. L. White. Evers Administration Issues 'Stay-At-Home' Order For Wisconsin. [Online]. Available: https://www.wpr.org/evers-administration-issues-stay-home-order-wisconsin
+2. Google Maps. [Online]. Available: https://www.google.com/maps
+- [Weather1](https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5)
+- [Weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
+- [Covid cases](https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e22f5ba4f1f94e0bb0b9529dc82db6a3)
+
 ## Appendix
 <p float="left" align="middle">
   <img src="/images/PCA_Variance.png" width="90%" /><br>
@@ -219,13 +227,6 @@ To interpret each principal component, we examine the magnitude and direction of
 
 The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Season summer. This suggests that these four criteria vary together. 
 
-## References
-
-1. L. White. Evers Administration Issues 'Stay-At-Home' Order For Wisconsin. [Online]. Available: https://www.wpr.org/evers-administration-issues-stay-home-order-wisconsin
-2. Google Maps. [Online]. Available: https://www.google.com/maps
-- [Weather1](https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5)
-- [Weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
-- [Covid cases](https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e22f5ba4f1f94e0bb0b9529dc82db6a3)
 
 
 
