@@ -170,7 +170,7 @@ The model seems to have a slight low bias. Figure 11 shows that the predicted va
   Figure 11
 </p>
 
-Looking at the importance of each factor used in the model, we found that COVID-19 cases is only slightly important. Figure ... shows the importance of each variable on both bike paths. 
+Looking at the importance of each factor used in the model, we found that COVID-19 cases is only slightly important compared to the other factors, while temperature seems to be the dominant variable that has the most influence on bike ridership. As a result, it is likely that the differences in daily bike ridership with or without COVID-19 cases are not significant. Figure ... shows the importance of each variable on both bike paths. 
 
 <p float="left" align="middle">
   <img src="/images/Factors Capital.png" width="40%" />
@@ -191,8 +191,12 @@ Having developed models to visualize bike utilization, we can use them to predic
 </p>
 
 The discrepancies between the predicted number of bikes with and without COVID-19 cases in Figure ... align with the finding that COVID-19 has a relatively small and positive effect on bike traffic on Capital Trail and a slightly larger but negative effect on bike traffic on Monroe. However, the discrepancies are relatively small and therefore can be considered almost negligible.
+
 ## 8. Conclusions
 
+Our research found that COVID-19 has a minuscule impact on daily bike ridership but a significant impact on the distribution of bike traffic throughout the day. COVID-19 cases affect bike ridership postively on Capital Trail but negatively on Monroe Path, and its effects are slightly larger on Monroe than Capital Trail. However, these effects are most likely unimportant when forecasting bike ridership in 2021 due to their extremely low importance in the Random Forest model used in this analysis. It is apparent, however, that the COVID-19 pandemic has caused daily bike traffic to be more concentrated at around 4 PM or possibly a similar time in the afternoon. This is likely a concern because bike paths will be more crowded than usual at around this time of the day.
+
+Future studies should look more into into the relationship between bike traffic on Capital Trail and pedestrians on State Street. Our analysis has only been able to speculate that riders on Capital Trail may also be pedestrians on State Street. We found that the correlation between bike traffic on Capital Trail and pedestrians on State Street is much stronger after the pandemic started than before. Understanding how these two relate to each other will provide more insight, such as the destinations of bikers, for the City of Madison.
 
 
 ## Appendix
