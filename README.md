@@ -34,15 +34,15 @@ There used to be two peaks throughout the day, but now there is only one. This m
   <b>Figure 3. </b> Hourly average number of bikes throughout the day with COVID-19 grouped by season before and after the COVID-19 pandemic started on Capital Trail (left) and Monroe (right). Only data until June 2020 are available.
 </p>
 
-The peak at around 8 AM is gone but the peak at around 4 PM still exists and is likely bigger. The peak during spring is larger during the pandemic than before the pandemic. Since data from July 2020 onwards, which includes the peak of summer in 2020, are not currently available, it is likely that the peak in the summer during the pandemic is larger than before the pandemic.
+The peak at around 8 AM is gone but the peak at around 4 PM still exists and is likely bigger. The peak during spring is larger during the pandemic than before the pandemic. Since data from July 2020 onwards, which includes the peak of summer in 2020, are not currently available, it is likely that the peak in the summer and the subsequent seasons during the pandemic is larger than before the pandemic.
 
-Most of the bike riders during the pandemic may have been doing so for leisure activities. Figure 4 and 5 show a much stronger correlation between bikers on the Capital Trail and pedestrians on State Street during the pandemic than before the pandemic. The number of pedestrians on State Street decreased and became much closer to the number of bikes. Given that most of riders are active at around 4 PM during the pandemic, they may also be pedestrians on State Street.
+Most of the bike riders on Capital Trail during the pandemic may have been doing so for leisure activities. Figure 4 and 5 show a much stronger correlation between bikers on the Capital Trail and pedestrians on State Street during the pandemic than before the pandemic. The number of pedestrians on State Street decreased and became much closer to the number of bikes. Given that most of riders are active at around 4 PM during the pandemic, they may also be pedestrians on State Street.
 
 <p float="left" align="middle">
   <img src="/images/Ped pre.png" /><br>
-  <b>Figure 4. </b> Bike and pedestrian traffic before the COVID-19 Pandemic<br>
+  <b>Figure 4. </b> Bike traffic on Capital Trail and pedestrian traffic on State Street before the COVID-19 Pandemic started.<br>
   <img src="/images/Ped post.png" /> <br>
-  <b>Figure 5. </b> Bike and pedestrian traffic after the COVID-19 Pandemic
+  <b>Figure 5. </b> Bike traffic on Capital Trail and pedestrian traffic on State Street after the COVID-19 Pandemic started.
 </p>
 
 
