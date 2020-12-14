@@ -80,13 +80,16 @@ After plotting the heatmap between numerical variables and the target variable (
 Both correlation heatmap and simple linear regression plots suggest that temp and dew have a  remarkable impact on the level of bike usage at Capital, while such dominant factors don't exist at Monroe. We should keep in mind that the existence of such impactful factors at Captial may overshadow other predictors, such as COVID-19 related variables. Therefore, the strong impact of temperature and dew at Captial might be the driving force of the difference in the impact of COVID-19 between two bike paths. We will go back to this point again in **section 4.1**
 
 
-### 3.2 Categorical Variables[to-do]
+### 3.2 Categorical Variables
+
+In this section, we progress to explore the relationship between level of bike traffic with some categorical variables, including season, day of week, hour, in/out of school session. 
 
 <p float="left" align="middle">
   <img src = "images/Categorical variable.png"><br>
   Figure 5
 </p>
 
+It can be seen that bike users are most active in summer and least active in the winter. We also observe a slightly higher level of bike usage during the weekend compared to the weekdays. The peak hour is usually around 7:00 - 8:00 am and 4:00 - 5:00 pm, which aligns with the rush hour for the commuters. Interestingly, we also find that there are more bike users during the winter or summer break in comparison with the regular school session. This phenomenon can be attributed to the high bike usage level during the long summer break which is displayed in the subplot in the upper-left corner. 
 
 
 ## 4 Feature importance and the Impact of COVID-19
@@ -102,12 +105,12 @@ We explored feature importance at two bike path locations (Capital and Monroe). 
   Figure 5
 </p>
 
-First of all, other than season and month factors, the year factor (2020) also has a large absolute coefficient at Monroe when we assign a smaller penalty to the model. Indeed, the year 2020 has double meanings in this context. The year 2020 not only represents a calendar year but also indicates the existence of covid-19 as a boolean type variable. On the contrary, we don't see any covid-related variables that have a profound impact on the model at the Capital.
+First of all, other than season and month factors, the year factor (2020) also has a large absolute coefficient at Monroe when we assign a smaller penalty to the model. Indeed, the year 2020 has double meanings in this context. The year 2020 not only represents a calendar year but also indicates the existence of COVID-19 as a boolean type variable. On the contrary, we don't see any COVID-related variables that have a profound impact on the model at the Capital.
 
 Moreover, when we increase the penalty term to 100, all the coefficients converge to zero at Monroe, shown in Figure 6. However, max_temp and wind speed at the Capital is not affected by the penalty term at all, since these two variables display a nearly horizontal line throughout the plot. Their resilience against the penalty force indicates their outstanding contribution to the model at the Capital.
 
 Last but not least, in the range between 10 to 40 of penalty at Monroe, we can see the green line which represents the positive rate remains an important factor in the model.
-Combined with the earlier analysis of the Year 2020, we can conclude that covid-19 have a strong influence on the bike user's behavior at Monroe, while weather-related information such as temperature and windspeed dominates the model at the Capital, which makes COVID-19 less significant in that case. 
+Combined with the earlier analysis of the Year 2020, we can conclude that COVID-19 have a strong influence on the bike user's behavior at Monroe, while weather-related information such as temperature and windspeed dominates the model at the Capital, which makes COVID-19 less significant in that case. 
 
 Continued from the analysis in **section 3.1**, the lasso model also demonstrates that there exist influential factors at Capital but we couldn't find such at Monroe. These influential factors will overshadow other factors in the model and make them seem less significant. 
 
