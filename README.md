@@ -82,6 +82,10 @@ Both correlation heatmap and simple linear regression plots suggest that temp an
 
 ### 3.2 Categorical Variables[to-do]
 
+<p float="left" align="middle">
+  <img src = "images/Categorical variable.png"><br>
+  Figure 5
+</p>
 
 
 
