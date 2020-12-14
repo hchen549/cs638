@@ -123,7 +123,7 @@ In Figures 12 and 13, we take the difference in bike user counts between 2020 an
   Figure 12
 </p>
 
-We also plot a CDF for the difference between 2020 and 2019. The blue which represents Capital trail is to the right of the orange line for Monroe trail. Given each percentile, we are likely to observe a larger differnce at Capital compared to Monore. Moreover,while the 50th percentile (Median) is around 0 for the blue line, the orange line has a negative median value, which means a negative difference between 2020 and 2019. This plot proves that Capital trail have relatively more users than Monroe trail. 
+We also plot a CDF for the difference between 2020 and 2019. The blue which represents Capital trail is to the right of the orange line for Monroe trail. Given each percentile, we are likely to observe a larger difference at Capital compared to Monore. Moreover, while the 50th percentile (Median) is around 0 for the blue line, the orange line has a negative median value, which means a negative difference between 2020 and 2019. This plot proves that Capital trail has relatively more users than Monroe trail. 
 
 <p float="left" align="middle">
   <img src = "images/CDF of diff.png" width = 800><br>
