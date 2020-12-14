@@ -125,13 +125,7 @@ In Figures 12 and 13, we take the difference in bike user counts between 2020 an
   Figure 13
 </p>
 
-### 4.3 Reasons for the 
-The user composition is one of the possible reasons that could explain the difference behind those two locations. Capital has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap, as shown in Figure 14. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
 
-<p float="left" align="middle">
-  <img src = "images/User_composition.png" width = 800><br>
-  Figure 14
-</p>
 
 
 
@@ -212,6 +206,8 @@ Future studies should look more into into the relationship between bike traffic 
 - [Covid cases](https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e22f5ba4f1f94e0bb0b9529dc82db6a3)
 
 ## Appendix
+
+### PCA
 <p float="left" align="middle">
   <img src="/images/PCA_Variance.png" width="90%" /><br>
   Figure 6
@@ -232,6 +228,12 @@ To interpret each principal component, we examine the magnitude and direction of
 The first principal component is strongly correlated with four of the original variables. The first principal component increases with increasing Tests, Year 2020, Temperature, and Season summer. This suggests that these four criteria vary together. 
 
 
+### User composition
+The user composition is one of the possible reasons that could explain the difference behind those two locations. Capital has a larger gap between weekend and weekday during the daytime (shadowed area), whereas Monroe has a smaller gap, as shown in Figure 14. We believe the cyclists are the primary driving force for this larger gap. We conclude that Captial has a relatively high percentage of cyclists and a low percentage of commuters, but it is the other way around at Monroe. Moreover, cyclists are more resilient during the COVID-19 crisis since cycling is compatible with social distancing. Therefore, the higher the portion of cyclists and the lower the portion of commuter, the more resilient the bike path will be during the COVID-19.
 
+<p float="left" align="middle">
+  <img src = "images/User_composition.png" width = 800><br>
+  Figure 14
+</p>
 
 
