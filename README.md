@@ -54,26 +54,26 @@ We have around 50 factors after one-hot encoding and they can be split into nume
 
 ### 3.1 Numerical Variables
 
-As for the numerical variables, we focused on COVID-19 and weather variables, including rain/precipitation, snow, humidity, air pressure, temperature, and windspeed because weather is one of the major factor in deciding what mode of transportation to use and it is easy to measure. Figure 2 shows a heat map displaying the correlations between the variables with each other at the two locations.
+As for the numerical variables, we focused on COVID-19 and weather variables, including rain/precipitation, snow, humidity, air pressure, temperature, and windspeed because weather is one of the major factor in deciding what mode of transportation to use and it is easy to measure. Figure 6 shows a heat map displaying the correlations between the variables with each other at the two locations.
 
 <p float="left" align="middle">
-  <img src="/images/heatmap_capital.png" width="44%" />
-  <img src="/images/heatmap_monroe.png" width="44%" /> <br>
-  Figure 2
+  <img src="/images/heatmap_capital.png" width="80%"  />
+  <img src="/images/heatmap_monroe.png" width="80%" /> <br>
+  <b>Figure 6. </b>Heat map of correlations between variables on Capital Trail (top) and Monroe (bottom).
 </p>
 
 We observe that temp and dew tend to have a strong correlation (around 0.85) with Counts at Capital, while the correlation between them and Counts is around 0.45. These numbers substantiate the conclusion we made above that temp and windspeed are much more influential than other variables in the model of Capital. 
 
-After plotting the heatmap between numerical variables and the target variable (Count), we started to build simple linear regression to check if there is a linear relationship between each numerical variable and Count, shown in Figure 3. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow closely with a linear model while **temp and dew both follow more of a quadratic fit**. 
+After plotting the heatmap between numerical variables and the target variable (Count), we built a simple linear regression to check if there is a linear relationship between each numerical variable and Count, shown in Figures 7 and 8. The red lines in the scatter plots represent a simple linear regression fit. We can see both wind speed and gust follow closely with a linear model while temp and dew both follow more of a quadratic fit. 
 
 <p float="left" align="middle">
   <img src = "images/Simple_lr_num_at_capital.png"><br>
-  Figure 3
+  <b>Figure 7. </b>Linear regression with numerical variables on Capital Trail.
 </p>
 
 <p float="left" align="middle">
   <img src = "images/Simple_lr_num_at_monroe.png"><br>
-  Figure 4
+  <b>Figure 8. </b>Linear regression with numerical variables on Monroe.
 </p>
 
 
@@ -82,27 +82,27 @@ Both correlation heatmap and simple linear regression plots suggest that temp an
 
 ### 3.2 Categorical Variables
 
-In this section, we progress to explore the relationship between level of bike traffic with some categorical variables, including season, day of week, hour, in/out of school session. 
+In this section, we explored the relationship between level of bike traffic with some categorical variables, including season, day of week, hour, in/out of school session. Figure 9 shows the relationship between these categorical variables with the daily number of bikes.
 
 <p float="left" align="middle">
   <img src = "images/Categorical variable.png"><br>
-  Figure 5
+  <b>Figure 9. </b>Relationship between categorical variables with daily bike ridership
 </p>
 
-It can be seen that bike users are most active in summer and least active in the winter. We also observe a slightly higher level of bike usage during the weekend compared to the weekdays. The peak hour is usually around 7:00 - 8:00 am and 4:00 - 5:00 pm, which aligns with the rush hour for the commuters. Interestingly, we also find that there are more bike users during the winter or summer break in comparison with the regular school session. This phenomenon can be attributed to the high bike usage level during the long summer break which is displayed in the subplot in the upper-left corner. 
+It can be seen that bike users are most active in summer and least active in the winter. We also observe a slightly higher level of bike usage during the weekend compared to the weekdays. The peak hour is usually around 7 - 8 am and 4 - 5 pm, which aligns with the rush hour for the commuters. Interestingly, we also find that there are more bike users during the winter or summer break in comparison with the regular school session. This phenomenon can be attributed to the high bike usage level during the long summer break which is displayed in the subplot in the upper-left corner. 
 
 
-## 4 Feature importance and the Impact of COVID-19
+## 4. The Impact of COVID-19
 
 In this section, we employed two methods to understand the impact of COVID-19. The first method is the lasso model where we examined how the coefficients of COVID-19 related variables change in response to the change in the magnitude of the penalty term. In the second method, we took a more straightforward strategy where we conducted a year-to-year comparison to display how the bike usage counts change in the Year 2020 compared to the previous year.  
 
 ### 4.1 Method 1 (Lasso Model)
-We explored feature importance at two bike path locations (Capital and Monroe). Figure 5 shows how factors' coefficients change with the penalty term assigned in the Lasso regression model. We observe that the trend displays three remarkable differences regarding feature importance between these two locations. 
+We explored feature importance at two bike path locations (Capital and Monroe). Figure 10 shows how factors' coefficients change with the penalty term assigned in the Lasso regression model. We observe that the trend displays three remarkable differences regarding feature importance between these two locations. 
 
 <p float="left" align="middle">
   <img src="/images/lasso_capital1.png" width="45%" />
   <img src="/images/lasso_monroe1.png" width="45%" /><br>
-  Figure 5
+  <b>Figure 10. </b>Change in the coefficient for each factor with respect to penalty.
 </p>
 
 First of all, other than season and month factors, the year factor (2020) also has a large absolute coefficient at Monroe when we assign a smaller penalty to the model. Indeed, the year 2020 has double meanings in this context. The year 2020 not only represents a calendar year but also indicates the existence of COVID-19 as a boolean type variable. On the contrary, we don't see any COVID-related variables that have a profound impact on the model at the Capital.
@@ -116,81 +116,73 @@ Continued from the analysis in **section 3.1**, the lasso model also demonstrate
 
 ### 4.2 Method 2 (Year-to-year comparison)
 
-In Figures 12 and 13, we take the difference in bike user counts between 2020 and 2019. It should be noted that the difference is aligned by day of the week when computing the difference to avoid taking the difference between a weekday and a weekend. The number on the upper left and lower left of each subplot represents the proportion of the positive and negative difference, respectively.  It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street. While the majority of points are evenly distributed around the horizontal line, there is an exception which is highlighted in yellow in the middle of both plots. It is interesting to see that we can only observe a negative difference in both locations for this extended period. This observation encourages us to discover some special events that might occur within these two weeks which could explain this exception and potentially become a great predictor of the level of bike traffic.
+In Figure 11, we took the difference in bike user counts between 2020 and 2019. It should be noted that the difference is aligned by day of the week when computing the difference to avoid taking the difference between a weekday and a weekend. The number on the upper left and lower left of each subplot represents the proportion of the positive and negative difference, respectively.  It can be seen that Capital was almost unaffected by the COVID-19, while bike users decline to some extent at Monroe Street. While the majority of points are evenly distributed around the horizontal line, there is an exception which is highlighted in yellow in the middle of both plots. It is interesting to see that we can only observe a negative difference in both locations for this extended period. This observation encourages us to discover some special events that might occur within these two weeks which could explain this exception and potentially become a great predictor of the level of bike traffic.
  
 <p float="left" align="middle">
   <img src = "images/diff_in_counts_scatter.PNG" width = 800><br>
-  Figure 12
+  <b>Figure 11. </b>Difference between bike ridership in 2019 and in 2020 on Monroe (left) and Capital Trail (right)
 </p>
 
-We also plot a CDF for the difference between 2020 and 2019. The blue which represents Capital trail is to the right of the orange line for Monroe trail. Given each percentile, we are likely to observe a larger difference at Capital compared to Monore. Moreover, while the 50th percentile (Median) is around 0 for the blue line, the orange line has a negative median value, which means a negative difference between 2020 and 2019. This plot proves that Capital trail has relatively more users than Monroe trail. 
+Figure 12 shows a cumulative distribution function (CDF) for the difference between 2020 and 2019. The blue which represents Capital trail is to the right of the orange line for Monroe trail. Given each percentile, we are likely to observe a larger difference at Capital compared to Monore. Moreover, while the 50th percentile (Median) is around 0 for the blue line, the orange line has a negative median value, which means a negative difference between 2020 and 2019. This plot proves that Capital trail has relatively more users than Monroe trail. 
 
 <p float="left" align="middle">
   <img src = "images/CDF of diff.png" width = 800><br>
-  Figure 13
+  <b>Figure 12. </b>CDF of the difference in bike ridership in 2019 and in 2020
 </p>
-
-
-
-
-
 
 ## 5. Model Selection
 
-Figure 8 shows an evaluation of the performance of four different models used for the bike counts prediction. Within each algorithm, including Lasso, Ridge, Random Forest (rf), Gradient Boosting (gbr), we first select the optimal set of hyperparameters and then use 12-fold cross-validation to assess the model performance on the holdout dataset in each iteration. The height of the bar represents the average of explained variance while the error bar represents the standard deviation of the explained variance for the 12-fold cross-validation. It can be seen that the tree-based methods, such as rf and gbr, have better performance compared to linear models. However, those tree-based models also suffer from high computation costs and lower interpretability.
+Figure 13 shows an evaluation of the performance of four different models used for the bike counts prediction. Within each algorithm, including Lasso, Ridge, Random Forest (rf), Gradient Boosting (gbr), we first select the optimal set of hyperparameters and then use 12-fold cross-validation to assess the model performance on the holdout dataset in each iteration. The height of the bar represents the average of explained variance while the error bar represents the standard deviation of the explained variance for the 12-fold cross-validation. It can be seen that the tree-based methods, such as rf and gbr, have better performance compared to linear models. However, those tree-based models also suffer from high computation costs and lower interpretability.
 
 <p float="left" align="middle">
   <img src="/images/Model_comparison_cap.png" width="60%" /><br>
-  Figure 8
+  <b>Figure 13. </b>Average explained variances for lasso, ridge, gradient boosting, and random forest regression models
 </p>
 
-
-
-
-We selected a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. The red lines in both Figure 9 represent the explained variance score on the training set, while the green lines represent the explained variance score on the test set. Not surprisingly, the explained variance score on the training set is always higher than that of the test set, because the model will memorize some noise inherent in the data in the training process. One remarkable difference between the linear model and tree-based model is that there is a larger gap between these two lines in the random forest and a smaller gap in the Ridge. A larger gap indicates a problem of overfitting since random forest only achieve high explained variance on the training set, but a relatively low explained variance score on the test set. On the contrary, the linear model suffers a high bias problem. That's because even the explained variance score on the training set is around 0.82 and that score will be even lower on the test set. Another finding is that collecting more data might be helpful in the case of a tree-based model but that is not true for the linear model. The green line keeps increasing as the number of training examples increases in the random forest. However, the green line in the Ridge plot has already struck at the current point and is also bounded by the red line above. Therefore, we conclude the linear model almost reaches its full capacity, and collecting more data won't improve the performance of the linear model that much. But there is room for improvement for the tree-based model if more data is available. 
+We selected a representative model from the tree-based model and linear model respectively to diagnose the bias and variance trade-off. The red lines in both Figure 14 represent the explained variance score on the training set, while the green lines represent the explained variance score on the test set. Not surprisingly, the explained variance score on the training set is always higher than that of the test set, because the model will memorize some noise inherent in the data in the training process. One remarkable difference between the linear model and tree-based model is that there is a larger gap between these two lines in the random forest and a smaller gap in the Ridge. A larger gap indicates a problem of overfitting since random forest only achieve high explained variance on the training set, but a relatively low explained variance score on the test set. On the contrary, the linear model suffers a high bias problem. That's because even the explained variance score on the training set is around 0.82 and that score will be even lower on the test set. Another finding is that collecting more data might be helpful in the case of a tree-based model but that is not true for the linear model. The green line keeps increasing as the number of training examples increases in the random forest. However, the green line in the Ridge plot has already struck at the current point and is also bounded by the red line above. Therefore, we conclude the linear model almost reaches its full capacity, and collecting more data won't improve the performance of the linear model that much. But there is room for improvement for the tree-based model if more data is available. 
 
 <p float="left" align="middle">
   <img src="/images/RF_learning_curve.PNG" width="32%" />
   <img src="/images/Lasso_learning_curve.PNG" width="34%" /> 
   <img src="/images/Lasso_poly_learning_curve.PNG" width="32%" /> <br>
-  Figure 9
+  <b>Figure 14. </b>Explained variance as a function of number of training examples for random forest (left), lasso (middle), and polynomial lasso (right) regression models
 </p>
 
 
 ## 6. Model Performance
 
-We trained the Random Forest model on data from 2015 to 2020 and testes it on the same dataset. We found that the model is fairly accurate as it is able to learn the trends of the original dataset quite well. Figure .... shows the comparison between the original bike data and the predicted values from the model.
+We trained a random forest model on data from 2015 to 2020 and testes it on the same dataset. We found that the model is fairly accurate as it is able to learn the trends of the original dataset quite well. Figure 15 shows the comparison between the original bike data and the predicted values from the model.
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted.PNG" width="70%" /><br>
-  Figure 10
+  <b>Figure 15. </b>Comparison between the original bike data and the predicted values from the random forest model
 </p>
 
-The model seems to have a slight low bias. Figure 11 shows that the predicted values are slightly lower than the actual values, represented by the slope, which is less than 1. This will be important to keep in mind when interpreting the forecasts made using the model as the results of the model will likely be lower than what they will actually be. 
+The model seems to have a slight low bias. Figure 16 shows that the predicted values are slightly lower than the actual values, represented by the slope, which is less than 1. This will be important to keep in mind when interpreting the forecasts made using the model as the results of the model will likely be lower than what they will actually be. 
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted2.PNG" width="70%" /><br>
-  Figure 11
+  <b>Figure 16. </b>Linear regression between predicted and actual daily bike counts
 </p>
 
-Looking at the importance of each factor used in the model, we found that COVID-19 cases is only slightly important compared to the other factors, while temperature seems to be the dominant variable that has the most influence on bike ridership. As a result, it is likely that the differences in daily bike ridership with or without COVID-19 cases are not significant. Figure ... shows the importance of each variable on both bike paths. 
+Looking at the importance of each factor used in the model, we found that COVID-19 cases is only slightly important compared to the other factors, while temperature seems to be the dominant variable that has the most influence on bike ridership. As a result, it is likely that the differences in daily bike ridership with or without COVID-19 cases are not significant. Figure 17 shows the importance of each variable on both bike paths. 
 
 <p float="left" align="middle">
   <img src="/images/Factors Capital.png" width="40%" />
   <img src="/images/Factors Southwest.png" width="40%" /><br>
-  <b>Figure 2. </b> Importance of each variable on Capital Trail (left) and Monroe (right).
+  <b>Figure 17. </b> Importance of each variable on Capital Trail (left) and Monroe (right).
 </p>
 
-It seems that COVID-19 seems to be a bigger factor on Monroe than on Capital Trail. It only accounts for 0.22% of the variance in the model results on Capital Trail, while it accounts for 0.39% of the variance in the model results on Monroe.
+It seems that COVID-19 is a bigger factor on Monroe than on Capital Trail. It only accounts for 0.22% of the variance in the model results on Capital Trail, while it accounts for 0.39% of the variance in the model results on Monroe.
 
 ## 7. Predicting Daily Bike Ridership in 2021
 
-Having developed models to visualize bike utilization, we can use them to predict daily bike utilization in 2021. Since weather forecasts for 2021 are not available for this analysis, we estimated the weather in 2021 to be the average over 2015 to 2020. Figure ... shows the daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on both bike paths.
+Having developed models to visualize bike utilization, we can use them to predict daily bike utilization in 2021. Since weather forecasts for 2021 are not available for this analysis, we estimated the weather in 2021 to be the average over 2015 to 2020. Figure 18 shows the daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on both bike paths.
 
 <p float="left" align="middle">
   <img src="/images/Pred Capital.png"width="70%"/>
   <img src="/images/Pred Southwest.png"width="70%"/><br>
-  <b>Figure 2. </b> Daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on Capital Trail (top) and Monroe (bottom).
+  <b>Figure 18. </b> Daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on Capital Trail (top) and Monroe (bottom).
 </p>
 
 The discrepancies between the predicted number of bikes with and without COVID-19 cases in Figure ... align with the finding that COVID-19 has a relatively small and positive effect on bike traffic on Capital Trail and a slightly larger but negative effect on bike traffic on Monroe. However, the discrepancies are relatively small and therefore can be considered almost negligible.
