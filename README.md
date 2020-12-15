@@ -25,7 +25,7 @@ Figure 2 shows that there is a shift in bike traffic during the day before and a
 <p float="left" align="middle">
   <img src="/images/Historical1.png" width="40%" />
   <img src="/images/Historical2.png" width="40%" /><br>
-  <b>Figure 2. </b> Hourly average number of bikes throughout the day with and without COVID-19 on Capital Trail (left) and Monroe (right).
+  <b>Figure 2. </b> Hourly average number of bikes throughout the day with and without COVID-19 on Capital Trail (left) and Monroe (right). Data from [3].
 </p>
 
 There used to be two peaks throughout the day, but now there is only one. This means that bike traffic in Madison is concentrated around a certain time during the day. It seems that most people go out and ride their bikes at roughly the same time. The same trend can be seen when breaking up the data by season, shown in Figure 3.
@@ -33,7 +33,7 @@ There used to be two peaks throughout the day, but now there is only one. This m
 <p float="left" align="middle">
   <img src="/images/Season Capital.png" width="40%" />
   <img src="/images/Season Southwest.png" width="40%" /> <br>
-  <b>Figure 3. </b> Hourly average number of bikes throughout the day with COVID-19 grouped by season before and after the COVID-19 pandemic started on Capital Trail (left) and Monroe (right). Only data until June 2020 are available.
+  <b>Figure 3. </b> Hourly average number of bikes throughout the day with COVID-19 grouped by season before and after the COVID-19 pandemic started on Capital Trail (left) and Monroe (right). Only data until June 2020 are available. Data from [3].
 </p>
 
 The peak at around 8 AM is gone but the peak at around 4 PM still exists and is likely bigger. The peak during spring is larger during the pandemic than before the pandemic. Since data from July 2020 onwards, which includes the peak of summer in 2020, are not currently available, it is likely that the peak in the summer and the subsequent seasons during the pandemic is larger than before the pandemic.
@@ -42,9 +42,9 @@ Most of the bike riders on Capital Trail during the pandemic may have been doing
 
 <p float="left" align="middle">
   <img src="/images/Ped pre.png" /><br>
-  <b>Figure 4. </b> Bike traffic on Capital Trail and pedestrian traffic on State Street before the COVID-19 Pandemic started.<br>
+  <b>Figure 4. </b> Bike traffic on Capital Trail and pedestrian traffic on State Street before the COVID-19 Pandemic started. Data from [3].<br>
   <img src="/images/Ped post.png" /> <br>
-  <b>Figure 5. </b> Bike traffic on Capital Trail and pedestrian traffic on State Street after the COVID-19 Pandemic started.
+  <b>Figure 5. </b> Bike traffic on Capital Trail and pedestrian traffic on State Street after the COVID-19 Pandemic started. Data from [3].
 </p>
 
 
@@ -59,7 +59,7 @@ As for the numerical variables, we focused on COVID-19 and weather variables, in
 <p float="left" align="middle">
   <img src="/images/heatmap_capital.png" width="80%"  />
   <img src="/images/heatmap_monroe.png" width="80%" /> <br>
-  <b>Figure 6. </b>Heat map of correlations between variables on Capital Trail (top) and Monroe (bottom).
+  <b>Figure 6. </b>Heat map of correlations between variables on Capital Trail (top) and Monroe (bottom). Data from [3], [4], [5].
 </p>
 
 We observe that temp and dew tend to have a strong correlation (around 0.85) with Counts at Capital, while the correlation between them and Counts is around 0.45. These numbers substantiate the conclusion we made above that temp and windspeed are much more influential than other variables in the model of Capital. 
@@ -68,12 +68,12 @@ After plotting the heatmap between numerical variables and the target variable (
 
 <p float="left" align="middle">
   <img src = "images/Simple_lr_num_at_capital.png"><br>
-  <b>Figure 7. </b>Linear regression with numerical variables on Capital Trail.
+  <b>Figure 7. </b>Linear regression with numerical variables on Capital Trail. Data from [3], [4], [5].
 </p>
 
 <p float="left" align="middle">
   <img src = "images/Simple_lr_num_at_monroe.png"><br>
-  <b>Figure 8. </b>Linear regression with numerical variables on Monroe.
+  <b>Figure 8. </b>Linear regression with numerical variables on Monroe. Data from [3], [4], [5].
 </p>
 
 
@@ -86,7 +86,7 @@ In this section, we explored the relationship between level of bike traffic with
 
 <p float="left" align="middle">
   <img src = "images/Categorical variable.png"><br>
-  <b>Figure 9. </b>Relationship between categorical variables with daily bike ridership
+  <b>Figure 9. </b>Relationship between categorical variables with daily bike ridership. Data from [3].
 </p>
 
 It can be seen that bike users are most active in summer and least active in the winter. We also observe a slightly higher level of bike usage during the weekend compared to the weekdays. The peak hour is usually around 7 - 8 am and 4 - 5 pm, which aligns with the rush hour for the commuters. Interestingly, we also find that there are more bike users during the winter or summer break in comparison with the regular school session. This phenomenon can be attributed to the high bike usage level during the long summer break which is displayed in the subplot in the upper-left corner. 
@@ -102,7 +102,7 @@ We explored feature importance at two bike path locations (Capital and Monroe). 
 <p float="left" align="middle">
   <img src="/images/lasso_capital1.png" width="45%" />
   <img src="/images/lasso_monroe1.png" width="45%" /><br>
-  <b>Figure 10. </b>Change in the coefficient for each factor with respect to penalty.
+  <b>Figure 10. </b>Change in the coefficient for each factor with respect to penalty. Data from [3], [4], [5].
 </p>
 
 First of all, other than season and month factors, the year factor (2020) also has a large absolute coefficient at Monroe when we assign a smaller penalty to the model. Indeed, the year 2020 has double meanings in this context. The year 2020 not only represents a calendar year but also indicates the existence of COVID-19 as a boolean type variable. On the contrary, we don't see any COVID-related variables that have a profound impact on the model at the Capital.
@@ -120,14 +120,14 @@ In Figure 11, we took the difference in bike user counts between 2020 and 2019. 
  
 <p float="left" align="middle">
   <img src = "images/diff_in_counts_scatter.PNG" width = 800><br>
-  <b>Figure 11. </b>Difference between bike ridership in 2019 and in 2020 on Monroe (left) and Capital Trail (right)
+  <b>Figure 11. </b>Difference between bike ridership in 2019 and in 2020 on Monroe (left) and Capital Trail (right). Data from [3].
 </p>
 
 Figure 12 shows a cumulative distribution function (CDF) for the difference between 2020 and 2019. The blue which represents Capital trail is to the right of the orange line for Monroe trail. Given each percentile, we are likely to observe a larger difference at Capital compared to Monore. Moreover, while the 50th percentile (Median) is around 0 for the blue line, the orange line has a negative median value, which means a negative difference between 2020 and 2019. This plot proves that Capital trail has relatively more users than Monroe trail. 
 
 <p float="left" align="middle">
   <img src = "images/CDF of diff.png" width = 800><br>
-  <b>Figure 12. </b>CDF of the difference in bike ridership in 2019 and in 2020
+  <b>Figure 12. </b>CDF of the difference in bike ridership in 2019 and in 2020. Data from [3].
 </p>
 
 ## 5. Model Selection
@@ -155,14 +155,14 @@ We trained a random forest model on data from 2015 to 2020 and testes it on the 
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted.PNG" width="70%" /><br>
-  <b>Figure 15. </b>Comparison between the original bike data and the predicted values from the random forest model
+  <b>Figure 15. </b>Comparison between the original bike data and the predicted values from the random forest model. Data from [3], [4], [5].
 </p>
 
 The model seems to have a slight low bias. Figure 16 shows that the predicted values are slightly lower than the actual values, represented by the slope, which is less than 1. This will be important to keep in mind when interpreting the forecasts made using the model as the results of the model will likely be lower than what they will actually be. 
 
 <p float="left" align="middle">
   <img src="/images/Actual_vs_predicted2.PNG" width="70%" /><br>
-  <b>Figure 16. </b>Linear regression between predicted and actual daily bike counts
+  <b>Figure 16. </b>Linear regression between predicted and actual daily bike counts. Data from [3], [4], [5].
 </p>
 
 Looking at the importance of each factor used in the model, we found that COVID-19 cases is only slightly important compared to the other factors, while temperature seems to be the dominant variable that has the most influence on bike ridership. As a result, it is likely that the differences in daily bike ridership with or without COVID-19 cases are not significant. Figure 17 shows the importance of each variable on both bike paths. 
@@ -170,7 +170,7 @@ Looking at the importance of each factor used in the model, we found that COVID-
 <p float="left" align="middle">
   <img src="/images/Factors Capital.png" width="40%" />
   <img src="/images/Factors Southwest.png" width="40%" /><br>
-  <b>Figure 17. </b> Importance of each variable on Capital Trail (left) and Monroe (right).
+  <b>Figure 17. </b> Importance of each variable on Capital Trail (left) and Monroe (right). Data from [3], [4], [5].
 </p>
 
 It seems that COVID-19 is a bigger factor on Monroe than on Capital Trail. It only accounts for 0.22% of the variance in the model results on Capital Trail, while it accounts for 0.39% of the variance in the model results on Monroe.
@@ -182,7 +182,7 @@ Having developed models to visualize bike utilization, we can use them to predic
 <p float="left" align="middle">
   <img src="/images/Pred Capital.png"width="70%"/>
   <img src="/images/Pred Southwest.png"width="70%"/><br>
-  <b>Figure 18. </b> Daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on Capital Trail (top) and Monroe (bottom).
+  <b>Figure 18. </b> Daily bike count predictions in 2021 with 0 and 500 daily COVID-19 cases on Capital Trail (top) and Monroe (bottom). Data from [3], [4], [5].
 </p>
 
 The discrepancies between the predicted number of bikes with and without COVID-19 cases in Figure ... align with the finding that COVID-19 has a relatively small and positive effect on bike traffic on Capital Trail and a slightly larger but negative effect on bike traffic on Monroe. However, the discrepancies are relatively small and therefore can be considered almost negligible.
@@ -196,11 +196,11 @@ Future studies should look more into into the relationship between bike traffic 
 
 ## 9. References
 
-1. L. White. Evers Administration Issues 'Stay-At-Home' Order For Wisconsin. [Online]. Available: https://www.wpr.org/evers-administration-issues-stay-home-order-wisconsin
+1. L. White. "Evers Administration Issues 'Stay-At-Home' Order For Wisconsin". [Online]. Available: https://www.wpr.org/evers-administration-issues-stay-home-order-wisconsin
 2. Google Maps. [Online]. Available: https://www.google.com/maps
-- [Weather1](https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5)
-- [Weather2](https://www.ncdc.noaa.gov/cdo-web/confirmation)
-- [Covid cases](https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e22f5ba4f1f94e0bb0b9529dc82db6a3)
+3. City of Madison. "City of Madison Open Data". [Online]. Available: https://data-cityofmadison.opendata.arcgis.com/
+4. Weather Underground. [Online]. Available: https://www.wunderground.com/history/daily/us/wi/madison/KMSN/date/2017-7-5
+5. National Oceanic and Atmospheric Administration (NOAA). [Online]. Available: https://www.ncdc.noaa.gov/cdo-web/confirmation
 
 ## Appendix
 
