@@ -1,8 +1,10 @@
 
 # Analysis of The Effects of COVID-19 on Bike Traffic in Madison, Wisconsin
 
-Ian Cheng and Haoming Chen
-University of Wisconsin - Madison
+<p>
+<b>Ian Cheng and Haoming Chen <br>
+  University of Wisconsin - Madison</b>
+</p>
 
 ## 1. Introduction
 
